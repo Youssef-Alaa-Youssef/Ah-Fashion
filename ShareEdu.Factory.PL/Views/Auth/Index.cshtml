@@ -1,0 +1,34 @@
+﻿@model List<UserViewModel>
+<div class="container-fluid mt-5">
+    <h1 class="font-weight-bold text-center mb-4">User Details</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Details</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.UserName</td>
+                    <td><a class="btn btn-outline-info" asp-action="Details" asp-route-id="@user.Id">Detail</a></td>
+                    <td><a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@user.Id">Edit</a></td>
+                    <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@user.Id">Delete</a></td>
+                </tr>
+            }
+            <tr>
+                <td colspan="5" class="text-center">
+                    <button class="btn btn-outline-success mr-2" onclick="window.print()">Print</button>
+                    <button class="btn btn-outline-secondary mr-2">Print</button>
+                    <button class="btn btn-outline-info">PDF</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

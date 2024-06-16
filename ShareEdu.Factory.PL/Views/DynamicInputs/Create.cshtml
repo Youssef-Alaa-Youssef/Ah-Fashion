@@ -1,0 +1,100 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Employment.DynamicInputViewModel
+
+@{
+    ViewData["Title"] = "Create Dynamic Inputs";
+}
+
+<div class="container mt-5">
+    <h1>Create Dynamic Input</h1>
+
+    <div asp-validation-summary="ModelOnly" class="text-danger validation-summary text-center font-weight-bold"></div>
+
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="Label" class="control-label"></label>
+            <input asp-for="Label" class="form-control" />
+            <span asp-validation-for="Label" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="InputTypeId" class="control-label"></label>
+            <select id="InputTypeId" name="InputTypeId" asp-items="@ViewBag.InputTypes" class="form-control">
+                <option disabled selected>---- Select Value ----</option>
+            </select>
+            <span asp-validation-for="InputTypeId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="JobCategoryId" class="control-label"></label>
+            <select id="JobCategoryId" name="JobCategoryId" asp-items="@ViewBag.JobCategories" class="form-control">
+                <option disabled selected>---- Select Job Category ----</option>
+            </select>
+            <span asp-validation-for="JobCategoryId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="JobId" class="control-label"></label>
+            <select id="JobId" name="JobId" asp-items="@ViewBag.Jobs" class="form-control">
+                <option disabled selected>---- Select Job ----</option>
+            </select>
+            <span asp-validation-for="JobId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input asp-for="IsVisible" class="form-check-input" />
+                <label class="form-check-label" asp-for="IsVisible">Visible</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="form-check">
+                <input asp-for="IsRequired" class="form-check-input" />
+                <label class="form-check-label" asp-for="IsRequired">Required</label>
+            </div>
+        </div>
+
+        <!-- Additional options based on selected input type -->
+        <div id="additionalOptions" style="display: none;">
+            <div class="form-group" id="optionsGroup">
+                <label id="optionsLabel" class="control-label"></label>
+                <!-- Input or textarea for options -->
+                <textarea id="optionsInput" class="form-control" rows="3"></textarea>
+                <span id="optionsValidation" class="text-danger"></span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var inputTypeSelect = document.getElementById('InputTypeId');
+        var additionalOptions = document.getElementById('additionalOptions');
+        var optionsLabel = document.getElementById('optionsLabel');
+        var optionsInput = document.getElementById('optionsInput');
+
+        inputTypeSelect.addEventListener('change', function () {
+            var selectedType = inputTypeSelect.value;
+
+            if (selectedType === '5' || selectedType === '7') { // Assuming "5" is Checkbox and "7" is Radio Button
+                toggleOptions(true, 'Options');
+            } else {
+                toggleOptions(false, '');
+            }
+        });
+
+        function toggleOptions(show, labelText) {
+            if (show) {
+                additionalOptions.style.display = 'block';
+                optionsLabel.textContent = labelText;
+                optionsInput.setAttribute('name', 'Options');
+            } else {
+                additionalOptions.style.display = 'none';
+                optionsLabel.textContent = '';
+                optionsInput.removeAttribute('name');
+            }
+        }
+    });
+</script>

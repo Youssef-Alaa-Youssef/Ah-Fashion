@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ShareEdu.Factory.PL
+build_property.RootNamespace = ShareEdu.Factory.PL
+build_property.ProjectDir = G:\ShareEdu.Factory\ShareEdu.Factory.PL\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = G:\ShareEdu.Factory\ShareEdu.Factory.PL
+build_property._RazorSourceGeneratorDebug = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Activated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY3RpdmF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ActualRestPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY3R1YWxSZXN0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ForgetPass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3JnZXRQYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/RestPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXN0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWduVXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Employment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xFbXBsb3ltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ErrorProd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclByb2QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Auth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ConfirmationModalPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25maXJtYXRpb25Nb2RhbFBhcnRpYWxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

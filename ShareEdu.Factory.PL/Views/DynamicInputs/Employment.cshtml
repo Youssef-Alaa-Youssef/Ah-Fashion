@@ -1,0 +1,131 @@
+﻿@model IEnumerable<ShareEdu.Factory.DAL.Models.Employment.DynamicInput>
+
+@{
+    ViewData["Title"] = "Employment Form";
+}
+
+@if (ViewBag.Jobs != null)
+{
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Example font family */
+            line-height: 1.6; /* Improved readability with increased line height */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #A71556; /* Purple background for headers */
+            color: #fff; /* White text color for headers */
+        }
+
+        .closed-job {
+            color: #ccc; /* Gray color for closed jobs */
+        }
+    </style>
+
+    <div class="container-fluid mt-5">
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Location</th>
+                        <th>Salary</th>
+                        <th>Posted Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var job in ViewBag.Jobs)
+                    {
+                        <tr>
+                            <td>@job.Title</td>
+                            <td>@job.Description</td>
+                            <td>@job.Location</td>
+                            <td>@job.Salary</td>
+                            <td>@job.PostedDate.ToShortDateString()</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+
+<div class="container mt-5 mb-5">
+    <form asp-action="SubmitDynamicForm" method="post">
+        @foreach (var dynamicInput in Model)
+        {
+            if (dynamicInput.IsVisible)
+            {
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label" asp-for="@dynamicInput.Label">@dynamicInput.Label</label>
+
+                    <div class="col-sm-10">
+                        @if (dynamicInput.InputType.Name == "Text")
+                        {
+                            <input asp-for="@dynamicInput.Label" class="form-control" />
+                        }
+                        else if (dynamicInput.InputType.Name == "TextArea")
+                        {
+                            <textarea asp-for="@dynamicInput.Label" class="form-control"></textarea>
+                        }
+                        else if (dynamicInput.InputType.Name == "Email")
+                        {
+                            <input asp-for="@dynamicInput.Label" type="email" class="form-control" />
+                        }
+                        else if (dynamicInput.InputType.Name == "Number")
+                        {
+                            <input asp-for="@dynamicInput.Label" type="number" class="form-control" />
+                        }
+                        else if (dynamicInput.InputType.Name == "Checkbox")
+                        {
+                            <div class="form-check">
+                                <input asp-for="@dynamicInput.Label" type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">@dynamicInput.Label</label>
+                            </div>
+                        }
+                        else if (dynamicInput.InputType.Name == "Radio Button")
+                        {
+                            <!-- Assuming options are stored in another property -->
+                            @foreach (var option in dynamicInput.Options)
+                            {
+                                <div class="form-check">
+                                    <input asp-for="@dynamicInput.Label" type="radio" class="form-check-input" value="@option.Value" />
+                                    <label class="form-check-label">@option.Text</label>
+                                </div>
+                            }
+                        }
+                        else if (dynamicInput.InputType.Name == "Dropdown")
+                        {
+                            <select asp-for="@dynamicInput.Label" class="form-control">
+                                <option value="">-- Select --</option>
+                                <!-- Assuming options are stored in another property -->
+                                @foreach (var option in dynamicInput.Options)
+                                {
+                                    <option value="@option.Value">@option.Text</option>
+                                }
+                            </select>
+                        }
+                        <!-- Add more conditions for other input types as needed -->
+
+                        <span asp-validation-for="@dynamicInput.Label" class="text-danger"></span>
+                    </div>
+                </div>
+            }
+        }
+        <button type="submit" class="btn" style="background-color:#A71556;color:#fff">Apply</button>
+    </form>
+</div>

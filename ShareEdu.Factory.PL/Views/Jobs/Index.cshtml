@@ -1,0 +1,116 @@
+﻿@model IEnumerable<ShareEdu.Factory.DAL.Models.Employment.JobCategory>
+
+@{
+    ViewData["Title"] = "Jobs";
+}
+
+<style>
+    body {
+        font-weight: 700; /* Ensure all text inherits this */
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card__title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card__content {
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card__info {
+        display: flex;
+        justify-content: space-between;
+        color: #888;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .apply-button {
+        background-color: #A71556;
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none; /* Ensure links appear without underline */
+        display: inline-block; /* Ensure button behaves like a block element */
+        font-weight: bold;
+    }
+
+        .apply-button:hover {
+            text-decoration: none; 
+        }
+    .category-header {
+        font-size: 2rem; /* Larger font size */
+        font-weight: bold;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding: 15px;
+        border-bottom: 3px solid #A71556; /* Blue border bottom */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+        text-transform: uppercase; /* Convert text to uppercase */
+        letter-spacing: 1px; /* Increase letter spacing for emphasis */
+        color: #A71556; /* Blue color for text */
+        position: relative; /* Positioning context for pseudo-element */
+    }
+
+        .category-header::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background-color: #A71556; /* Red stripe at bottom */
+        }
+</style>
+
+<div class="container-fluid mt-5">
+    @foreach (var category in Model)
+    {
+        <h2 class="category-header">@category.Name</h2>
+        <div class="row">
+            @foreach (var job in category.Jobs)
+            {
+                <div class="col-lg-6 mb-4">
+                    <div class="card">
+                        <h3 class="card__title">@job.Title</h3>
+                        <p class="card__content">@job.Description</p>
+                        <div class="card__info">
+                            <div class="font-weight-bold">@job.Location</div>
+                            <div class="font-weight-bold">@job.Salary</div>
+                        </div>
+                        <div class="card__info">
+                            <div class="font-weight-bold">Posted: @job.PostedDate.ToShortDateString()</div>
+                            <div class="font-weight-bold">Apply by: @job.LastDateToApply.ToShortDateString()</div>
+                        </div>
+                        @{
+                            if (job.IsOpen)
+                            {
+                                <a href="@Url.Action("Employment", "DynamicInputs", new { jobId = job.Id })" class="apply-button mt-3">Apply</a>
+                            }
+                            else
+                            {
+                                <span class="apply-button mt-3" disabled>Closed</span>
+                            }
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

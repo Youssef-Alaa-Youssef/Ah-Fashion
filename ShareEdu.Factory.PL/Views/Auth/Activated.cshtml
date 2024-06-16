@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Account Activated";
+}
+<style>
+    .card {
+        border-radius: 15px;
+        border: 1px solid #e6e6e6;
+    }
+
+    .card-body {
+        padding: 40px;
+    }
+
+    .display-4 {
+        font-weight: bold;
+    }
+
+    .text-success {
+        color: #28a745;
+    }
+
+    hr {
+        border-top: 1px solid #e6e6e6;
+        margin: 20px 0;
+    }
+</style>
+<div class="container text-center mt-5">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h1 class="display-4 text-success"><i class="fas fa-check-circle"></i> Account Activated Successfully!</h1>
+            <p class="lead">Your account has been activated.</p>
+            <hr>
+            <p>You can now <a href="@Url.Action("Login", "Auth")" class="btn btn-outline-success">Log In</a> to your account.</p>
+        </div>
+    </div>
+</div>
+
+
+

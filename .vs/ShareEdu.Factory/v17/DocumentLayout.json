@@ -1,0 +1,1096 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\ShareEdu.Factory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\dynamicinputs\\employment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\dynamicinputs\\employment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\jobs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\jobs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\controllers\\employment\\dynamicinputscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\controllers\\employment\\dynamicinputscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\employment\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\employment\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\employment\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\employment\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\dynamicinputs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\dynamicinputs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\dynamicinputs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\dynamicinputs\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|g:\\shareedu.factory\\shareedu.factory.bll\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|solutionrelative:shareedu.factory.bll\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\employment\\dynamicinputviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\employment\\dynamicinputviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\employment\\dynamicinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\employment\\dynamicinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|g:\\shareedu.factory\\shareedu.factory.bll\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|solutionrelative:shareedu.factory.bll\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240613161810_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240613161810_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240615152716_addemploymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240615152716_addemploymentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240616174322_add input data types change some thing in two models - inputtype and dynamic type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240616174322_add input data types change some thing in two models - inputtype and dynamic type.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240616182731_add input data types change some thing in two models - inputtype and dynamic type another.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240616182731_add input data types change some thing in two models - inputtype and dynamic type another.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240616192158_add input data types change some thing in two models - inputtype and dynamic type and add options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240616192158_add input data types change some thing in two models - inputtype and dynamic type and add options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\20240616202046_add input data types change some thing in two models - inputtype and dynamic type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\20240616202046_add input data types change some thing in two models - inputtype and dynamic type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\migrations\\factorydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\migrations\\factorydbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\configurations\\jobcategoryconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\configurations\\jobcategoryconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\configurations\\jobsconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\configurations\\jobsconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\employment\\jobcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\employment\\jobcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\configurations\\dynamicinputconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\configurations\\dynamicinputconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\configurations\\inputtypeconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\configurations\\inputtypeconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\employment\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\employment\\options.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\employment\\optionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\employment\\optionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\employment\\inputtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\employment\\inputtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\auth\\applicationroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\auth\\applicationroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\helper\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\helper\\emailconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\dynamicinputs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\dynamicinputs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\dynamicinputs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\dynamicinputs\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\confirmationmodalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\confirmationmodalviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\auth\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\auth\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\auth\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\auth\\signupviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\auth\\restpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\auth\\restpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\auth\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\viewmodels\\auth\\actualrestpassswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\viewmodels\\auth\\actualrestpassswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\models\\size.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|g:\\shareedu.factory\\shareedu.factory.dal\\data\\factorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48ADAD77-B729-4650-AC3B-765AF0B10375}|ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj|solutionrelative:shareedu.factory.dal\\data\\factorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\views\\auth\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\views\\auth\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|g:\\shareedu.factory\\shareedu.factory.bll\\interfaces\\irespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|solutionrelative:shareedu.factory.bll\\interfaces\\irespository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|g:\\shareedu.factory\\shareedu.factory.bll\\shareedu.factory.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|solutionrelative:shareedu.factory.bll\\shareedu.factory.bll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\controllers\\jobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\controllers\\jobcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\controllers\\jobcategorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|g:\\shareedu.factory\\shareedu.factory.pl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3541A2F-D745-4EC6-A964-A4844EBF845D}|ShareEdu.Factory.PL\\ShareEdu.Factory.PL.csproj|solutionrelative:shareedu.factory.pl\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|g:\\shareedu.factory\\shareedu.factory.bll\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CF190BC-E3D2-4B6E-9FDB-E74FE0C5335D}|ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj|solutionrelative:shareedu.factory.bll\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Edit.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Edit.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T17:52:10.062Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240616222845_Add IsOpen column in Jobs Table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616222845_Add IsOpen column in Jobs Table.cs",
+              "ViewState": "AQIAACMAAAAAzczMzMwmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T22:28:46.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Jobs\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\Jobs\\Index.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Jobs\\Index.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\Jobs\\Index.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswD4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T21:35:06.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\JobsController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Employment\\JobsController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\JobsController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Employment\\JobsController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAuwBIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T21:34:09.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DynamicInputsController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\Employment\\DynamicInputsController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Controllers\\Employment\\DynamicInputsController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\Employment\\DynamicInputsController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Controllers\\Employment\\DynamicInputsController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAA4wBsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:47:36.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Create.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Create.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Create.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T17:51:14.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAK0AAAAAMzMzMzMTwJIAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T21:04:36.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Employment.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Employment.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Employment.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Employment.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Employment.cshtml",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAAIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T18:54:37.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20240616202046_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616202046_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616202046_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616202046_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616202046_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:20:46.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20240616192158_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616192158_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616192158_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616192158_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616192158_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:21:58.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Jobs.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\Jobs.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Employment\\Jobs.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\Jobs.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Employment\\Jobs.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBEAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:10:28.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dynamicInputViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\dynamicInputViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Employment\\dynamicInputViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\dynamicInputViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Employment\\dynamicInputViewModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA1wAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:16:40.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DynamicInput.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\DynamicInput.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Employment\\DynamicInput.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\DynamicInput.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Employment\\DynamicInput.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA8wBkAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:27:57.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.BLL\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "ShareEdu.Factory.BLL\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAnwCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:34:09.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240615152716_AddEmploymentModels.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240615152716_AddEmploymentModels.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240615152716_AddEmploymentModels.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240615152716_AddEmploymentModels.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240615152716_AddEmploymentModels.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:27:17.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240616210138_Add Initial Data in job table 2.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616210138_Add Initial Data in job table 2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T21:01:39.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240613161810_InitialCreate.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240613161810_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240613161810_InitialCreate.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240613161810_InitialCreate.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240613161810_InitialCreate.cs",
+              "ViewState": "AQIAAAsAAAAgAAAAAAAQwBMAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:27:39.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.BLL\\Repositories\\Repository.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\Repositories\\Repository.cs",
+              "RelativeToolTip": "ShareEdu.Factory.BLL\\Repositories\\Repository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAvwBAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:33:08.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240616182731_Add Input Data Types change some thing in two models - InputType and Dynamic Type another.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182731_Add Input Data Types change some thing in two models - InputType and Dynamic Type another.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182731_Add Input Data Types change some thing in two models - InputType and Dynamic Type another.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182731_Add Input Data Types change some thing in two models - InputType and Dynamic Type another.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182731_Add Input Data Types change some thing in two models - InputType and Dynamic Type another.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:27:31.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FactoryDbContextModelSnapshot.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\FactoryDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\FactoryDbContextModelSnapshot.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\FactoryDbContextModelSnapshot.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\FactoryDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:27:44.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20240616174322_Add Input Data Types change some thing in two models - InputType and Dynamic Type.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616174322_Add Input Data Types change some thing in two models - InputType and Dynamic Type.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616174322_Add Input Data Types change some thing in two models - InputType and Dynamic Type.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616174322_Add Input Data Types change some thing in two models - InputType and Dynamic Type.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616174322_Add Input Data Types change some thing in two models - InputType and Dynamic Type.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:43:22.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201730_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:17:30.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201634_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:16:35.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "JobsConfigurations.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\JobsConfigurations.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Configurations\\JobsConfigurations.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\JobsConfigurations.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Configurations\\JobsConfigurations.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAuwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:17:08.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "JobCategoryConfigurations.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\JobCategoryConfigurations.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Configurations\\JobCategoryConfigurations.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\JobCategoryConfigurations.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Configurations\\JobCategoryConfigurations.cs",
+              "ViewState": "AQIAABEAAABAMzMzMzMnwBoAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:13:09.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616201211_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:12:13.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "InputTypeConfigurations.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\InputTypeConfigurations.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Configurations\\InputTypeConfigurations.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\InputTypeConfigurations.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Configurations\\InputTypeConfigurations.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAcwBIAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:22:07.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DynamicInputConfigurations.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\DynamicInputConfigurations.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Configurations\\DynamicInputConfigurations.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Configurations\\DynamicInputConfigurations.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Configurations\\DynamicInputConfigurations.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwCAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:30:17.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "JobCategory.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\JobCategory.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Employment\\JobCategory.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\JobCategory.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Employment\\JobCategory.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAswBAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:06:52.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200806_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:08:06.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200413_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:04:14.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616200155_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T20:01:55.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195923_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAD8AAACAmZmZmZktwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:59:24.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Options.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\Options.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Employment\\Options.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\Options.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Employment\\Options.cs",
+              "ViewState": "AQIAAAUAAAAAMzMzMzPzvwsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:50:41.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195713_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:57:15.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616195152_Add Input Data Types change some thing in two models - InputType and Dynamic Type and add options delete some columns in option table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:51:52.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "OptionViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\OptionViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Employment\\OptionViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Employment\\OptionViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Employment\\OptionViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:44:00.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "InputType.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\InputType.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Employment\\InputType.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Employment\\InputType.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Employment\\InputType.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T17:20:03.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EmailConfiguration.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Helper\\EmailConfiguration.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Helper\\EmailConfiguration.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Helper\\EmailConfiguration.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Helper\\EmailConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T19:17:32.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\appsettings.json",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\appsettings.json",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\appsettings.json",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-16T19:12:50.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Program.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Program.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Program.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Program.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAcwBcAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:35:08.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationRoles.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Auth\\ApplicationRoles.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Auth\\ApplicationRoles.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Auth\\ApplicationRoles.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Auth\\ApplicationRoles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:14.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Delete.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Delete.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T17:53:02.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ConfirmationModalViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\ConfirmationModalViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\ConfirmationModalViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\ConfirmationModalViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\ConfirmationModalViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:46.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\ErrorViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\ErrorViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:47.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Index.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\DynamicInputs\\Index.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\DynamicInputs\\Index.cshtml",
+              "ViewState": "AQIAAAkAAABgZmZmZmYkwBcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T17:49:29.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Auth\\UserViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\UserViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Auth\\UserViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:58.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "SignUpViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\SignUpViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Auth\\SignUpViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\SignUpViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Auth\\SignUpViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:56.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "RestPasswordViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\RestPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Auth\\RestPasswordViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\RestPasswordViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Auth\\RestPasswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:54.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "LogInViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\LogInViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Auth\\LogInViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\LogInViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Auth\\LogInViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:53.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ActualRestPassswordViewModel.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\ActualRestPassswordViewModel.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\ViewModels\\Auth\\ActualRestPassswordViewModel.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\ViewModels\\Auth\\ActualRestPassswordViewModel.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\ViewModels\\Auth\\ActualRestPassswordViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:51.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Size.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Size.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Models\\Size.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Models\\Size.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Models\\Size.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:39:16.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\Migrations\\20240616182553_Add Input Data Types change some thing in two models - InputType and Dynamic Type ANother.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:25:53.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "FactoryDbContext.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\FactoryDbContext.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.DAL\\Data\\FactoryDbContext.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\Data\\FactoryDbContext.cs",
+              "RelativeToolTip": "ShareEdu.Factory.DAL\\Data\\FactoryDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:19:37.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ShareEdu.Factory.BLL",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj",
+              "RelativeToolTip": "ShareEdu.Factory.BLL\\ShareEdu.Factory.BLL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-16T17:53:20.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Auth\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\Auth\\AccessDenied.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Auth\\AccessDenied.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\Auth\\AccessDenied.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T18:09:23.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "LogIn.cshtml",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Auth\\LogIn.cshtml",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Views\\Auth\\LogIn.cshtml",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Views\\Auth\\LogIn.cshtml",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Views\\Auth\\LogIn.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T18:09:27.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IRespository.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\InterFaces\\IRespository.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.BLL\\InterFaces\\IRespository.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\InterFaces\\IRespository.cs",
+              "RelativeToolTip": "ShareEdu.Factory.BLL\\InterFaces\\IRespository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAQwAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:32:21.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "JobCategoryController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\JobCategoryController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Controllers\\JobCategoryController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\JobCategoryController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Controllers\\JobCategoryController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:36:57.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Controllers\\HomeController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:37:24.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "JobsController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\JobsController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Controllers\\JobsController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\JobsController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Controllers\\JobsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:37:50.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.PL\\Controllers\\AuthController.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ShareEdu.Factory.PL\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:40:21.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\InterFaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "ShareEdu.Factory.BLL\\InterFaces\\IUnitOfWork.cs",
+              "ToolTip": "G:\\ShareEdu.Factory\\ShareEdu.Factory.BLL\\InterFaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "ShareEdu.Factory.BLL\\InterFaces\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-15T15:30:25.314Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

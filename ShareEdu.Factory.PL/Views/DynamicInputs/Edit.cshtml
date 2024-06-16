@@ -1,0 +1,95 @@
+﻿@model ShareEdu.Factory.DAL.Models.Employment.DynamicInput
+@{
+    ViewData["Title"] = "Edit Dynamic Input";
+
+    // Define dynamic header names
+    List<string> headers = new List<string> {
+        "Label",
+        "Input Type",
+        "Visible",
+        "Required",
+        "Job",
+        "Category",
+        ""
+    };
+}
+
+<div class="container mt-5">
+    <h1>@ViewData["Title"]</h1>
+
+    <div asp-validation-summary="ModelOnly" class="text-danger validation-summary text-center font-weight-bold"></div>
+
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="Id" />
+
+        <table class="table">
+            <thead>
+                <tr>
+                    @foreach (var header in headers)
+                    {
+                        <th>@header</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="form-group">
+                            <label for="Label" class="control-label">Label</label>
+                            <input asp-for="Label" class="form-control" />
+                            <span asp-validation-for="Label" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label for="InputTypeId" class="control-label">Input Type</label>
+                            <select asp-for="InputTypeId" asp-items="@ViewBag.InputTypes" class="form-control">
+                                <option>Please select</option>
+                            </select>
+                            <span asp-validation-for="InputTypeId" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input asp-for="IsVisible" class="form-check-input" />
+                                <label class="form-check-label" for="IsVisible">Visible</label>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input asp-for="IsRequired" class="form-check-input" />
+                                <label class="form-check-label" for="IsRequired">Required</label>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label for="JobId" class="control-label">Job</label>
+                            <select asp-for="JobId" asp-items="@ViewBag.Jobs" class="form-control">
+                                <option>Please select</option>
+                            </select>
+                            <span asp-validation-for="JobId" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-group">
+                            <label for="JobCategoryId" class="control-label">Category</label>
+                            <select asp-for="JobCategoryId" asp-items="@ViewBag.JobCategories" class="form-control">
+                                <option>Please select</option>
+                            </select>
+                            <span asp-validation-for="JobCategoryId" class="text-danger"></span>
+                        </div>
+                    </td>
+                    <td>
+                        <!-- Add any additional actions or controls here -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+    </form>
+</div>
