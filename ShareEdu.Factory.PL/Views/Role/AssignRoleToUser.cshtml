@@ -1,0 +1,36 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Auth.ApplicationUserViewModel
+
+<div class="container mt-5 mb-5">
+<h1>Assign Role to User: @Model.UserName</h1>
+
+<p><strong>Email:</strong> @Model.Email</p>
+
+<h4>Current Roles:</h4>
+<ul>
+    @foreach (var role in Model.Roles)
+    {
+        <li>@role</li>
+    }
+</ul>
+
+<form asp-action="AssignRoleToUser" method="post" class="form-horizontal" role="form">
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="form-group">
+            <label asp-for="Roles" class="col-md-2 control-label">Role</label>
+        <div class="col-md-10">
+                <select asp-for="Roles" asp-items="@ViewBag.Roles" class="form-control">
+                <option>Select Role</option>
+            </select>
+                <span asp-validation-for="Roles" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary">Assign Role</button>
+            <a asp-action="Index" class="btn btn-default">Back to Roles</a>
+        </div>
+    </div>
+</form>
+</div>

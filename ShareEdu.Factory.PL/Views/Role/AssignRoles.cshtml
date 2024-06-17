@@ -1,0 +1,30 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Auth.ApplicationUserViewModel
+
+@{
+    ViewData["Title"] = "Assign Roles";
+}
+
+<div class="container mt-5">
+    <h1>Assign Roles for @Model.UserName</h1>
+
+    <form asp-action="AssignRoles" method="post">
+        <input type="hidden" asp-for="UserId" />
+
+
+        <div class="form-group">
+            <label asp-for="Roles" class="control-label">Select Roles</label>
+            <select id="Roles" name="Roles" class="form-control" multiple>
+                <option disabled selected>---- Select Value ----</option>
+                @{
+                    foreach (var option in @ViewBag.Roles){
+                        <option value="@option.Value">@option.Text</option>
+                    }
+                }
+            </select>
+            <span asp-validation-for="Roles" class="text-danger"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Assign Roles</button>
+    </form>
+</div>

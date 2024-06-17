@@ -1,0 +1,23 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Auth.AssignUsersViewModel
+
+<div class="container mt-5 mb-5">
+<h1>Assign Users to Role: @Model.RoleName</h1>
+
+<form asp-action="AssignUsers" method="post" class="needs-validation" novalidate>
+    <input type="hidden" asp-for="RoleId" />
+
+    <div class="form-group">
+        <label asp-for="SelectedUsers" class="control-label">Select Users</label>
+        <select asp-for="SelectedUsers" class="form-control" multiple>
+            @foreach (var user in Model.Users)
+            {
+                    <option value="@user.Id">@user.UserName</option>
+            }
+        </select>
+        <span asp-validation-for="SelectedUsers" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Assign Users</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+</div>

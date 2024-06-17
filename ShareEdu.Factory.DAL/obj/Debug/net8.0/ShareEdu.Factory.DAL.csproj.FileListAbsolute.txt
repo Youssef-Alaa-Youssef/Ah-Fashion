@@ -19,6 +19,7 @@ G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.G
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.AssemblyInfoInputs.cache
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.AssemblyInfo.cs
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.csproj.CoreCompileInputs.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.sourcelink.json
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\refint\ShareEdu.Factory.DAL.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.DAL\obj\Debug\net8.0\ShareEdu.Factory.DAL.pdb

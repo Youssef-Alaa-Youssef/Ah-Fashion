@@ -1,0 +1,16 @@
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\bin\Release\net8.0\win-x86\ShareEdu.Factory.BLL.deps.json
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\bin\Release\net8.0\win-x86\ShareEdu.Factory.BLL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\bin\Release\net8.0\win-x86\ShareEdu.Factory.BLL.pdb
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\bin\Release\net8.0\win-x86\ShareEdu.Factory.DAL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\bin\Release\net8.0\win-x86\ShareEdu.Factory.DAL.pdb
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.csproj.AssemblyReference.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.GeneratedMSBuildEditorConfig.editorconfig
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.AssemblyInfoInputs.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.AssemblyInfo.cs
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.csproj.CoreCompileInputs.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.sourcelink.json
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.93A881CF.Up2Date
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\refint\ShareEdu.Factory.BLL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ShareEdu.Factory.BLL.pdb
+G:\ShareEdu.Factory\ShareEdu.Factory.BLL\obj\Release\net8.0\win-x86\ref\ShareEdu.Factory.BLL.dll

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ShareEdu.Factory.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin,Super Admin")]
     public class DynamicInputsController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;

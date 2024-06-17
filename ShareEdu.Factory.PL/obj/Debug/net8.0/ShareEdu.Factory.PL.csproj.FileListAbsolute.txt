@@ -251,6 +251,15 @@ F:\C#_Revision\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\runtimes\wi
 F:\C#_Revision\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 F:\C#_Revision\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 F:\C#_Revision\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.csproj.AssemblyReference.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.GeneratedMSBuildEditorConfig.editorconfig
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.AssemblyInfoInputs.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.AssemblyInfo.cs
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.csproj.CoreCompileInputs.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.MvcApplicationPartsAssemblyInfo.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.RazorAssemblyInfo.cache
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.RazorAssemblyInfo.cs
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.sourcelink.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\appsettings.Development.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\appsettings.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.PL.staticwebassets.runtime.json
@@ -262,7 +271,10 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.PL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\AutoMapper.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Azure.Core.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Azure.Identity.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Castle.Core.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Humanizer.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\MailKit.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -286,6 +298,7 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.DotNet.Scaffo
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
@@ -310,6 +323,7 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.VisualStudio.
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\MimeKit.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Mono.TextTemplating.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Newtonsoft.Json.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\NuGet.Common.dll
@@ -490,14 +504,6 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.BLL.dl
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.DAL.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.BLL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\ShareEdu.Factory.DAL.pdb
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.csproj.AssemblyReference.cache
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.GeneratedMSBuildEditorConfig.editorconfig
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.AssemblyInfoInputs.cache
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.AssemblyInfo.cs
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.csproj.CoreCompileInputs.cache
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.MvcApplicationPartsAssemblyInfo.cache
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.RazorAssemblyInfo.cache
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.RazorAssemblyInfo.cs
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\staticwebassets.build.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\staticwebassets.development.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\staticwebassets\msbuild.ShareEdu.Factory.PL.Microsoft.AspNetCore.StaticWebAssets.props
@@ -512,8 +518,3 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\refint\ShareEdu.Factory
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.genruntimeconfig.cache
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ref\ShareEdu.Factory.PL.dll
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\MailKit.dll
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\MimeKit.dll
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Castle.Core.dll
-G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
+      "Id": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\wwwroot\\css\\loader.css",
+      "PackagePath": "staticwebassets\\css\\loader.css"
+    },
+    {
       "Id": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\wwwroot\\css\\main.min.css",
       "PackagePath": "staticwebassets\\css\\main.min.css"
     },
@@ -5623,6 +5627,10 @@
     {
       "Id": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\wwwroot\\js\\jquery.waypoints.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\wwwroot\\js\\loader.js",
+      "PackagePath": "staticwebassets\\js\\loader.js"
     },
     {
       "Id": "G:\\ShareEdu.Factory\\ShareEdu.Factory.PL\\wwwroot\\js\\main.js",

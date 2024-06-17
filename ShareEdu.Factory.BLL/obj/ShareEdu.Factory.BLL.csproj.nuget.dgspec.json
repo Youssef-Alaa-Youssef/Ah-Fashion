@@ -66,6 +66,11 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
       }
     },
     "G:\\ShareEdu.Factory\\ShareEdu.Factory.DAL\\ShareEdu.Factory.DAL.csproj": {
@@ -147,6 +152,11 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
         }
       }
     }

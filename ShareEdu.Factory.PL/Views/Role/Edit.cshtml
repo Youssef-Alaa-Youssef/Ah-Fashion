@@ -1,0 +1,32 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Auth.ApplicationRolesViewModel
+@{
+    ViewData["Title"] = "Edit Role";
+}
+<div class="container mt-5 mb-5">
+<h1>Edit Role</h1>
+
+<form asp-action="Edit" method="post" class="needs-validation" novalidate>
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Role Name (En)</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+        <div class="form-group">
+            <label asp-for="RoleNameAr" class="control-label">Role Name (Ar)</label>
+            <input asp-for="RoleNameAr" class="form-control" />
+            <span asp-validation-for="RoleNameAr" class="text-danger"></span>
+        </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+</div>
+@section Scripts {
+    <script>
+        // Client-side validation setup if needed
+        $(document).ready(function () {
+            $("form").validate();
+        });
+    </script>
+}
