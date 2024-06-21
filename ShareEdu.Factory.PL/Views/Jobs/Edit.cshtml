@@ -1,0 +1,57 @@
+﻿@model ShareEdu.Factory.PL.ViewModels.Jobs.JobViewModel // Ensure correct namespace and class name
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container mt-5 mb-5">
+
+    <h1>Edit Job</h1>
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Title"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Salary"></label>
+            <input asp-for="Salary" class="form-control" />
+            <span asp-validation-for="Salary" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Location"></label>
+            <input asp-for="Location" class="form-control" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Responsibilities"></label>
+            <input asp-for="Responsibilities" class="form-control" />
+            <span asp-validation-for="Responsibilities" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="IsOpen"></label>
+            <input asp-for="IsOpen" class="form-control" />
+            <span asp-validation-for="IsOpen" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CategoryId" class="control-label"></label>
+            <select id="CategoryId" name="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
+                <option disabled selected>---- Select Value ----</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

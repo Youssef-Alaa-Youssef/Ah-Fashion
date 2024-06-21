@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container mt-5 mb-5">
+    @model ShareEdu.Factory.DAL.Models.Products.ProductCategory
+
+    <h1>Create Product Category</h1>
+
+    <form asp-action="Create">
+        <div class="form-group">
+            <label asp-for="NameEn" class="control-label"></label>
+            <input asp-for="NameEn" class="form-control" />
+            <span asp-validation-for="NameEn" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NameAr" class="control-label"></label>
+            <input asp-for="NameAr" class="form-control" />
+            <span asp-validation-for="NameAr" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Description" class="control-label"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </form>
+
+</div>
+

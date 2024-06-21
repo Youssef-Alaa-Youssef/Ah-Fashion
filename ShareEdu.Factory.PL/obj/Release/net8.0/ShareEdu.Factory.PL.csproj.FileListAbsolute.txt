@@ -265,3 +265,4 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\refint\ShareEdu.Facto
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\ShareEdu.Factory.PL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\ShareEdu.Factory.PL.genruntimeconfig.cache
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\ref\ShareEdu.Factory.PL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Release\net8.0\libman.json

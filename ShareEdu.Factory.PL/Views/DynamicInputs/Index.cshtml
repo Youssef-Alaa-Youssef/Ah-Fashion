@@ -7,8 +7,39 @@
 <p>
     <a asp-action="Create" class="btn btn-outline-primary">Create New</a>
 </p>
+    <style>
+        #myTable {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            border: 1px solid #dddddd; /* Light border around the table */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+        }
 
-<table class="table">
+            #myTable th,
+            #myTable td {
+                padding: 12px; /* Padding for better spacing */
+                text-align: center; /* Center-align text */
+                border-bottom: 1px solid #dddddd; /* Bottom border for all cells */
+            }
+
+            #myTable th {
+                background-color: #f2f2f2; /* Light gray background for header */
+                color: #333333; /* Dark text color for header */
+                font-weight: bold; /* Bold font for header */
+            }
+
+            #myTable tbody tr:nth-child(even) {
+                background-color: #f9f9f9; /* Alternate row background color */
+            }
+
+            #myTable tbody tr:hover {
+                background-color: #f2f2f2; /* Hover background color */
+            }
+
+    </style>
+<table id="myTable">
     <thead>
         <tr>
             <th>Label</th>

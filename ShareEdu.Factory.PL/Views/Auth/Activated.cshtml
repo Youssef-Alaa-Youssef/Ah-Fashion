@@ -1,6 +1,24 @@
 ﻿@{
     ViewData["Title"] = "Account Activated";
 }
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
 <style>
     .card {
         border-radius: 15px;

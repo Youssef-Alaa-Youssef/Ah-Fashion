@@ -16,6 +16,10 @@ namespace ShareEdu.Factory.BLL.Repositories
             _dbSet = context.Set<TEntity>();
         }
 
+        public async Task<TEntity> GetByIdAsync(Guid id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
         public async Task<TEntity> GetByIdAsync(int id)
         {
             return await _dbSet.FindAsync(id);

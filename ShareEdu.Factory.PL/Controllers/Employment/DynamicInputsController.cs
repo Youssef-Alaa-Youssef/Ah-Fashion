@@ -118,7 +118,7 @@ namespace ShareEdu.Factory.Controllers
                 // Add the DynamicInput entity itself to the database
                 await _unitOfWork.GetRepository<DynamicInput>().AddAsync(dynamicInput);
                 await _unitOfWork.SaveChangesAsync();
-
+                TempData["Success"] = "Inputs Added Successfully. ";
                 return RedirectToAction(nameof(Index)); // Replace with your actual action name
             }
 
@@ -144,7 +144,7 @@ namespace ShareEdu.Factory.Controllers
                 Value = cat.Id.ToString(),
                 Text = cat.Name
             }).ToList();
-
+            TempData["Error"] = "Invalid Options";
             return View(viewModel);
         }
 
@@ -199,11 +199,13 @@ namespace ShareEdu.Factory.Controllers
             {
                 try
                 {
+                    TempData["Success"] = "Inputs Updated Successfully. ";
                     await _unitOfWork.GetRepository<DynamicInput>().UpdateAsync(dynamicInput);
                     await _unitOfWork.SaveChangesAsync();
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    TempData["Error"] = $"{ex.Message}.";
                     return NotFound();
                 }
                 return RedirectToAction(nameof(Index));
@@ -233,6 +235,7 @@ namespace ShareEdu.Factory.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            TempData["Success"] = "Input Deleted Successfully . ";
             var dynamicInput = await _unitOfWork.GetRepository<DynamicInput>().GetByIdAsync(id);
             await _unitOfWork.GetRepository<DynamicInput>().RemoveAsync(dynamicInput);
             await _unitOfWork.SaveChangesAsync();

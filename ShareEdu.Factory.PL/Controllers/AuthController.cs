@@ -63,18 +63,23 @@ namespace ShareEdu.Factory.PL.Controllers
             var user = await _userManager.FindByEmailAsync(model.Email);
             if (user == null)
             {
-                ModelState.AddModelError(string.Empty, "Invalid Email Or Password.");
+                TempData["Error"] = "Invalid Email Or Password.";
                 return View(model);
             }
 
             var result = await _signInManager.PasswordSignInAsync(user, model.Password, model.RememberMe, false);
             if (result.Succeeded)
             {
-                TempData["SuccessMessage"] = "Congratulations Login Successfully";
+                TempData["Success"] = "Congratulations Login Successfully";
                 return RedirectToAction(nameof(Index), "Home");
             }
-            ModelState.AddModelError(string.Empty, "Your account needs to be activated.");
-            ModelState.AddModelError(string.Empty, "Please check your email for the activation link.");
+            if (!user.EmailConfirmed)
+            {
+                ModelState.AddModelError(string.Empty, "Your account needs to be activated.");
+                ModelState.AddModelError(string.Empty, "Please check your email for the activation link.");
+                return View(model);
+            }
+            TempData["Error"] = "Invalid Email Or Password.";
             return View(model);
         }
         public IActionResult SignUp()
@@ -91,7 +96,7 @@ namespace ShareEdu.Factory.PL.Controllers
             var existingUser = await _userManager.FindByEmailAsync(model.Email);
             if (existingUser != null)
             {
-                ModelState.AddModelError(string.Empty, "Email is already in use.");
+                TempData["Error"] = "Email is already in use.";
                 return View(model);
             }
 
@@ -153,6 +158,8 @@ namespace ShareEdu.Factory.PL.Controllers
 
             foreach (var error in result.Errors)
             {
+                TempData["Error"] = $"{error.Description}.";
+
                 ModelState.AddModelError(string.Empty, error.Description);
             }
 
@@ -172,12 +179,15 @@ namespace ShareEdu.Factory.PL.Controllers
             var user = await _userManager.FindByIdAsync(userId);
             if (user == null)
             {
+                TempData["Error"] = "Please provide valid credentials.";
+
                 return RedirectToAction("Error");
             }
 
             var result = await _userManager.ConfirmEmailAsync(user, token);
             if (result.Succeeded)
             {
+                TempData["Success"] = "Account Activated Successfully.";
                 return RedirectToAction("Activated");
             }
 
@@ -194,6 +204,7 @@ namespace ShareEdu.Factory.PL.Controllers
         [HttpPost]
         public async Task<IActionResult> LogOut()
         {
+            TempData["Success"] = "You have been successfully logged out";
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home"); 
         }
@@ -212,7 +223,7 @@ namespace ShareEdu.Factory.PL.Controllers
                 var user = await _userManager.FindByEmailAsync(model.Email);
                 if (user == null || !(await _userManager.IsEmailConfirmedAsync(user)))
                 {
-                    ViewData["Error"] = "Account Not Activated";
+                    TempData["Error"] = "Account Not Activated";
                     return RedirectToAction(nameof(ForgetPass));
                 }
 
@@ -276,6 +287,7 @@ namespace ShareEdu.Factory.PL.Controllers
         {
             if (UserId == null || Token == null)
             {
+                TempData["Error"] = "Please provide valid credentials.";
                 return RedirectToAction(nameof(RestPassword));
             }
 
@@ -292,19 +304,23 @@ namespace ShareEdu.Factory.PL.Controllers
                 var user = await _userManager.FindByIdAsync(model.UserId);
                 if (user == null)
                 {
+                    TempData["Error"] = "Please provide valid credentials.";
+
                     return RedirectToAction(nameof(RestPassword));
                 }
 
                 var result = await _userManager.ResetPasswordAsync(user, model.Token, model.Password);
                 if (result.Succeeded)
                 {
+                    TempData["Success"] = "Reset Password Done Successfully. ";
+
                     return RedirectToAction(nameof(ResetPasswordConfirmation));
                 }
                 else
                 {
                     foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError(string.Empty, error.Description);
+                        TempData["Error"] = $"{error.Description}.";
                     }
                     return View(model);
                 }

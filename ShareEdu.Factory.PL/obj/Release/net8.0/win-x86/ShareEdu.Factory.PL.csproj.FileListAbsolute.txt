@@ -255,3 +255,4 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\refint\ShareE
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\ShareEdu.Factory.PL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\ShareEdu.Factory.PL.genruntimeconfig.cache
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\ref\ShareEdu.Factory.PL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Release\net8.0\win-x86\libman.json

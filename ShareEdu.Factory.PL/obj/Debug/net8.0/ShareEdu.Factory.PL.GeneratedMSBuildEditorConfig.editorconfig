@@ -17,167 +17,259 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ShareEdu.Factory.PL
 build_property.RootNamespace = ShareEdu.Factory.PL
-build_property.ProjectDir = g:\ShareEdu.Factory\ShareEdu.Factory.PL\
+build_property.ProjectDir = G:\ShareEdu.Factory\ShareEdu.Factory.PL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = g:\ShareEdu.Factory\ShareEdu.Factory.PL
+build_property.MSBuildProjectDirectory = G:\ShareEdu.Factory\ShareEdu.Factory.PL
 build_property._RazorSourceGeneratorDebug = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/AccessDenied.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Activated.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Activated.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY3RpdmF0ZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ActualRestPassword.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ActualRestPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxBY3R1YWxSZXN0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Confirmation.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Confirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Error.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ForgetPass.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ForgetPass.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3JnZXRQYXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/LogIn.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dJbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ResetPasswordConfirmation.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ResetPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/RestPassword.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/RestPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXN0UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/SignUp.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Create.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Delete.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Edit.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Employment.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Employment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xFbXBsb3ltZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/DynamicInputs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHluYW1pY0lucHV0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/AboutUs.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/AboutUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ContactUs.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ErrorProd.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ErrorProd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvclByb2QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/FAQS.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/FAQS.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGQVFTLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Profile.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Issues.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJc3N1ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/_TermsOfService.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/_TermsOfService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVGVybXNPZlNlcnZpY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/AllJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xBbGxKb2JzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Jobs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Product/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/ProductCategory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/ProductCategory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/ProductCategory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/ProductCategory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/ProductCategory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignRoles.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AllRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBbGxSb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignRoles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ25Sb2xlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignRoleToUser.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignRoleToUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ25Sb2xlVG9Vc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignUsers.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/AssignUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBc3NpZ25Vc2Vycy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Create.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Delete.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Edit.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Index.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/Error.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Sections/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Sections/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Sections/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Sections/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/SettingGroups/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ0dyb3Vwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/SettingGroups/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ0dyb3Vwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/SettingGroups/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ0dyb3Vwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/SettingGroups/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2V0dGluZ0dyb3Vwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Auth.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Auth.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ConfirmationModalPartialView.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ConfirmationModalPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25maXJtYXRpb25Nb2RhbFBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Layout.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ToastrPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub2FzdHJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewImports.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Website/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Website/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2Vic2l0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[g:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewStart.cshtml]
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

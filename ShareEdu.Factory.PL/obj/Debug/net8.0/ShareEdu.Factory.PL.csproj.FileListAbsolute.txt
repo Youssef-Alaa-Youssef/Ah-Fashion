@@ -518,3 +518,4 @@ G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\refint\ShareEdu.Factory
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.pdb
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ShareEdu.Factory.PL.genruntimeconfig.cache
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Debug\net8.0\ref\ShareEdu.Factory.PL.dll
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\bin\Debug\net8.0\libman.json

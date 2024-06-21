@@ -76,30 +76,33 @@
                     <div class="col-sm-10">
                         @if (dynamicInput.InputType.Name == "Text")
                         {
-                            <input asp-for="@dynamicInput.Label" class="form-control" />
+                            <input asp-for="@dynamicInput.Label" value="" class="form-control" />
                         }
                         else if (dynamicInput.InputType.Name == "TextArea")
                         {
-                            <textarea asp-for="@dynamicInput.Label" class="form-control"></textarea>
+                            <textarea asp-for="@dynamicInput.Label" value="" class="form-control"></textarea>
+                        }
+                        else if (dynamicInput.InputType.Name == "File")
+                        {
+                            <input asp-for="@dynamicInput.Label" value="" class="form-control" />
                         }
                         else if (dynamicInput.InputType.Name == "Email")
                         {
-                            <input asp-for="@dynamicInput.Label" type="email" class="form-control" />
+                            <input asp-for="@dynamicInput.Label" value="" type="email" class="form-control" />
                         }
                         else if (dynamicInput.InputType.Name == "Number")
                         {
-                            <input asp-for="@dynamicInput.Label" type="number" class="form-control" />
+                            <input asp-for="@dynamicInput.Label" value="" type="number" class="form-control" />
                         }
                         else if (dynamicInput.InputType.Name == "Checkbox")
                         {
                             <div class="form-check">
-                                <input asp-for="@dynamicInput.Label" type="checkbox" class="form-check-input" />
+                                <input asp-for="@dynamicInput.Label"  type="checkbox" class="form-check-input" />
                                 <label class="form-check-label">@dynamicInput.Label</label>
                             </div>
                         }
                         else if (dynamicInput.InputType.Name == "Radio Button")
                         {
-                            <!-- Assuming options are stored in another property -->
                             @foreach (var option in dynamicInput.Options)
                             {
                                 <div class="form-check">
@@ -112,14 +115,12 @@
                         {
                             <select asp-for="@dynamicInput.Label" class="form-control">
                                 <option value="">-- Select --</option>
-                                <!-- Assuming options are stored in another property -->
                                 @foreach (var option in dynamicInput.Options)
                                 {
                                     <option value="@option.Value">@option.Text</option>
                                 }
                             </select>
                         }
-                        <!-- Add more conditions for other input types as needed -->
 
                         <span asp-validation-for="@dynamicInput.Label" class="text-danger"></span>
                     </div>
@@ -129,3 +130,6 @@
         <button type="submit" class="btn" style="background-color:#A71556;color:#fff">Apply</button>
     </form>
 </div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

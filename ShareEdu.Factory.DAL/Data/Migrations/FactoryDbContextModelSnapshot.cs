@@ -365,19 +365,19 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         new
                         {
                             Id = 1,
-                            AddTime = new DateTime(2024, 6, 16, 22, 28, 44, 104, DateTimeKind.Utc).AddTicks(3110),
+                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8739),
                             Name = "Software Development"
                         },
                         new
                         {
                             Id = 2,
-                            AddTime = new DateTime(2024, 6, 16, 22, 28, 44, 104, DateTimeKind.Utc).AddTicks(3116),
+                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8743),
                             Name = "Marketing"
                         },
                         new
                         {
                             Id = 3,
-                            AddTime = new DateTime(2024, 6, 16, 22, 28, 44, 104, DateTimeKind.Utc).AddTicks(3118),
+                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8746),
                             Name = "Finance"
                         });
                 });
@@ -465,6 +465,276 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                     b.HasIndex("DynamicInputId");
 
                     b.ToTable("Option");
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.Product", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("ProductID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
+
+                    b.Property<int>("CategoryID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateOnly>("Expire")
+                        .HasColumnType("date");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("SizeID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("CategoryID");
+
+                    b.HasIndex("SizeID");
+
+                    b.ToTable("Products", (string)null);
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.ProductCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("CategoryID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameAr")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("NameEn")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductCategories", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Products for Men",
+                            NameAr = "رجالي",
+                            NameEn = "Men"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Products for Women",
+                            NameAr = "نسائي",
+                            NameEn = "Women"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Products for Kids",
+                            NameAr = "أطفال",
+                            NameEn = "Kids"
+                        });
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.Size", b =>
+                {
+                    b.Property<int>("SizeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("SizeID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SizeID"));
+
+                    b.Property<string>("NameAr")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("NameEn")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Symbol")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("SizeID");
+
+                    b.ToTable("Sizes", (string)null);
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Settings.Section", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("Visable")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sections", (string)null);
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Settings.SettingGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Action")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Controller")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("LinkNameAr")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("LinkNameEn")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<bool>("Visable")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("place")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("ranking")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SettingGroups", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Action = "Index",
+                            Controller = "Home",
+                            CreatedAt = new DateTime(2024, 6, 21, 21, 17, 34, 951, DateTimeKind.Local).AddTicks(2697),
+                            LinkNameAr = "العامة",
+                            LinkNameEn = "General",
+                            Name = "General Settings",
+                            Visable = true,
+                            place = "1",
+                            ranking = "1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Action = "AboutUs",
+                            Controller = "Home",
+                            CreatedAt = new DateTime(2024, 6, 21, 21, 17, 34, 951, DateTimeKind.Local).AddTicks(2775),
+                            LinkNameAr = "نبذا عنا",
+                            LinkNameEn = "About Us",
+                            Name = "About Settings",
+                            Visable = true,
+                            place = "2",
+                            ranking = "2"
+                        });
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Settings.Website", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("Id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CompanyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("CompanyName");
+
+                    b.Property<string>("Domain")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Domain");
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit")
+                        .HasColumnName("IsVisible");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("Name");
+
+                    b.Property<DateTime?>("Now")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("Now");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Websites", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CompanyName = "Ah Fashion",
+                            Domain = "http://ah-fashion.runasp.net/",
+                            IsVisible = true,
+                            Name = "Ah Fashion",
+                            Now = new DateTime(2024, 6, 21, 18, 17, 34, 953, DateTimeKind.Utc).AddTicks(8378)
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -565,6 +835,25 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                     b.Navigation("DynamicInput");
                 });
 
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.Product", b =>
+                {
+                    b.HasOne("ShareEdu.Factory.DAL.Models.Products.ProductCategory", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ShareEdu.Factory.DAL.Models.Products.Size", "Size")
+                        .WithMany()
+                        .HasForeignKey("SizeID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Size");
+                });
+
             modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Employment.DynamicInput", b =>
                 {
                     b.Navigation("Options");
@@ -583,6 +872,11 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
             modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Employment.Jobs", b =>
                 {
                     b.Navigation("DynamicInputs");
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.ProductCategory", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

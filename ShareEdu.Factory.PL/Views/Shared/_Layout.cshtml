@@ -14,18 +14,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="~/images/icons/favicon-16x16.png">
     <link rel="manifest" href="~/images/icons/site.html">
     <link rel="mask-icon" href="~/images/icons/safari-pinned-tab.svg" color="#666666">
-    <link rel="shortcut icon" href="~/images/icons/favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="~/images/icons/favicon-32x32.png">
     <meta name="apple-mobile-web-app-title" content="Ah Fashion">
     <meta name="application-name" content="Ah Fashion">
     <meta name="msapplication-TileColor" content="#A71556">
     <meta name="msapplication-config" content="~/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="~/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/plugins/owl-carousel/owl.carousel.css">
     <link rel="stylesheet" href="~/css/plugins/magnific-popup/magnific-popup.css">
     <link rel="stylesheet" href="~/css/style.css">   
     <link rel="stylesheet" href="~/css/loader.css" />
+    <partial name="_ToastrPartial" />
 
     <style>
         .validation-summary {
@@ -68,11 +68,11 @@
                 <div class="container-fluid">
                     <div class="header-left">
                         <div class="header-dropdown font-weight-bold">
-                            <a href="#">Eng</a>
+                            <a class="active">Eng</a>
                             <div class="header-menu">
                                 <ul>
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">Arabic</a></li>
+                                    <li><a class="active" disabled>English</a></li>
+                                    @* <li><a href="#">Arabic ( Next Release )</a></li> *@
                                 </ul>
                             </div>
                         </div>
@@ -82,10 +82,19 @@
                         <ul class="top-menu font-weight-bold">
                             <li>
                                 <ul>
-                                    <li><a href="tel:#"><i class="icon-phone"></i>Call: +20 102 565 1102</a></li>
-                                    <li><a asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                                    <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
-
+                                    @if (!User.IsInRole("Admin"))
+                                    {
+                                        <li><a href="tel:#"><i class="icon-phone"></i>Call: +20 102 565 1102</a></li>
+                                        <li><a asp-controller="Home" asp-action="AboutUs">About Us</a></li>
+                                        <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
+                                        <li>
+                                            <a asp-action="/WishList">
+                                                <i class="icon-heart-o"></i>
+                                                WishList
+                                                <span> (3) </span>
+                                            </a>
+                                        </li>
+                                    }
                                     @if (User.Identity.IsAuthenticated)
                                     {
                                         <li>
@@ -127,35 +136,44 @@
 
                         <nav class="main-nav justify-content-center">
                             <ul class="menu sf-arrows ">
-                                <li class="megamenu-container-fluid active">
+                                @if (!User.IsInRole("Admin")) {
+                                <li class="megamenu-container-fluid ">
                                     <a asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li>
-                                    <a asp-controller="Product" asp-action="Index">Products</a>
-                                </li>
-                                <li>
-                                    <a asp-controller="Home" asp-action="Category"  class="sf-with-ul">Category</a>
-
-                                    <ul>
-                                        <li>
-                                            <a href="#">Men</a>
-                                            <ul>
-                                                <li><a href="blog-grid-2cols.html">Clothes</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
                                 </li>
                                 <li>
                                     <a asp-controller="Home" asp-action="FAQs" >FAQs</a>
                                 </li>
+                                    }
                                 <li>
-                                    <a asp-controller="Jobs" asp-action="Index">Jobs</a>
+                                    <a asp-controller="Jobs" asp-action="Index">
+                                        @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
+                                        {
+                                            <span>Jobs Dashboard</span>
+                                                                    }
+                                        else
+                                        {
+                                            <span>Jobs</span>
+                                        }
+                                    </a>
                                 </li>
-                                @if (User.IsInRole("Admin"))
+                                @if (User.IsInRole("Super Admin"))
+                                {
+                                    <li><a asp-controller="SettingGroups" asp-action="Index">Settings Dashboard</a></li>
+                                    <li><a asp-controller="Website" asp-action="Index"> Website Settings </a></li>
+
+                                }
+                                @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
                                 {
                                     <li><a asp-controller="Role" asp-action="Index">Role Dashboard</a></li>
-                                    <li><a asp-controller="DynamicInputs" asp-action="Index">Create Forms</a></li>
 
+                                    <li><a asp-controller="Auth" asp-action="Index">Users Dashboard</a></li>
+                                    <li><a asp-controller="ProductCategory" asp-action="Index"> Category Dashboard </a></li>
+
+
+                                }
+                                @if (User.IsInRole("Recruitment Officer"))
+                                {
+                                    <li><a asp-controller="Jobs" asp-action="AllJobs">All Jobs</a></li>
                                 }
                             </ul>
                         </nav>
@@ -171,13 +189,6 @@
                                     <input type="search" class="form-control" name="q" id="q" placeholder="Search in..." required>
                                 </div>
                             </form>
-                        </div>
-                        <div class="ml-4 font-weight-bolder" style="font-size: 1.7rem;">
-                            <a asp-controller="Home" asp-action="WishList">
-                                <i class="icon-heart-o"></i>
-                                <span style="color: darkgrey;">WishList</span>
-                                (3)
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -207,17 +218,46 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a asp-controller="Home" asp-action="AboutUs">About Ah Fashion</a></li>
+                                    <li><a asp-controller="Home" asp-action="FAQs">FAQ</a></li>
+                                    <li><a asp-controller="Home" asp-action="ContactUs" >Contact us</a></li>
+                                    <li><a asp-controller ="Auth" asp-action="LogIn">Log in</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Customer Service</h4><!-- End .widget-title -->
+
+                                <ul class="widget-list">
+                                    <li><a>Payment Methods</a></li>
+                                    <li><a>Money-back guarantee!</a></li>
+                                    <li><a>Returns</a></li>
+                                    <li><a>Shipping</a></li>
+                                    <li><a>Terms and conditions</a></li>
+                                    <li><a>Privacy Policy</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
 
                         <div class="col-sm-6 col-lg-3">
                             <div class="widget">
                                 <h4 class="widget-title">My Account</h4><!-- End .widget-title -->
 
                                 <ul class="widget-list">
-                                    <li><a asp-controller="Home" asp-action="Wishlist">My Wishlist</a></li>
-                                    <li><a asp-controller="Home" asp-action="Help">Help</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                                    <li><a asp-controller="Auth" asp-action="LogIn">Sign In</a></li>
+                                    <li><a asp-controller="Wishlist">My Wishlist</a></li>
+                                    <li><a asp-controller="Auth" asp-action="LogIn">SignUp</a></li>
+                                    <li><a >Help</a></li>
+                                </ul><!-- End .widget-list -->
+                            </div><!-- End .widget -->
+                        </div><!-- End .col-sm-6 col-lg-3 -->
                     </div>
                 </div>
             </div>
@@ -329,7 +369,7 @@
     <script src="~/js/jquery.magnific-popup.min.js"></script>
     <script src="~/js/main.js"></script>
 
-    @RenderSectionAsync("Scripts",required:false);
+    @RenderSection("Scripts",required:false);
 </body>
 </html>
 

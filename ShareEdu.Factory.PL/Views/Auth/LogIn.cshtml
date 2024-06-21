@@ -3,6 +3,26 @@
     ViewData["Title"] = "LogIn";
     Layout = "_Auth";
 }
+
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
+
 <div class="card-body">
     <h5 class="card-title" style="text-align: center; font-size: 24px; color: #2d79f3; margin-top: 20px; text-transform: uppercase; font-weight: bold;">Login Now</h5> <!-- Inline styles for the login title -->
     <div asp-validation-summary="ModelOnly" class="text-danger validation-summary text-center font-weight-bold">
@@ -34,6 +54,9 @@
             <span class="span"><a asp-action="RestPassword">Forgot password?</a></span>
     </div>
         <input type="submit" class="button-submit" value="Sign In">
+
+        <p class="p mt-1 mb-1"> <span class="span"><a asp-controller="Home" asp-action="Index">Back To Home</a></span>
+
     <p class="p">
         Don't have an account? <span class="span"><a asp-action="SignUp">Sign Up</a></span>
 
@@ -68,3 +91,8 @@
     </div>
 </form>
 </<div>
+    </div>
+
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }

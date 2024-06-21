@@ -1,6 +1,7 @@
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\ShareEdu.Factory.PL.exe
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.Development.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\appsettings.json
+G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\libman.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\ShareEdu.Factory.PL.dll
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\ShareEdu.Factory.PL.runtimeconfig.json
 G:\ShareEdu.Factory\ShareEdu.Factory.PL\obj\Release\net8.0\win-x86\PubTmp\Out\ShareEdu.Factory.PL.pdb

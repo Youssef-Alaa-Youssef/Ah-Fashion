@@ -58,7 +58,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\UploadFile\" />
     <Folder Include="Services\WhatsApp\" />
     <Folder Include="Services\SMS\" />
   </ItemGroup>

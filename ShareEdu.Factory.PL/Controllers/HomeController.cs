@@ -1,6 +1,9 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Versioning;
+using ShareEdu.Factory.BLL.InterFaces;
+using ShareEdu.Factory.DAL.Models.Products;
+using ShareEdu.Factory.DAL.Models.Settings;
 using ShareEdu.Factory.PL.ViewModels;
 using ShareEdu.Factory.PL.ViewModels.Home;
 using System.Diagnostics;
@@ -10,15 +13,30 @@ namespace ShareEdu.Factory.PL.Controllers
     public class HomeController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public HomeController(UserManager<IdentityUser>  userManager)
+        public HomeController(UserManager<IdentityUser>  userManager,IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
+            _unitOfWork = unitOfWork;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            var sections = await _unitOfWork.GetRepository<Section>().GetAllAsync();
+            var website = await _unitOfWork.GetRepository<Website>().FindAsync(web => web.Id == 1);
 
-            return View();
+            if (website != null)
+            {
+                bool isVisible = website.Select(w=>w.IsVisible).FirstOrDefault();
+                if (!isVisible)
+                {
+                    return RedirectToAction("Issues");
+                }
+            }
+            
+            var categories = await _unitOfWork.GetRepository<ProductCategory>().GetAllAsync();
+            ViewBag.Categories = categories.ToList();
+            return View(sections);
         }
 
         public IActionResult ContactUs()
@@ -35,6 +53,22 @@ namespace ShareEdu.Factory.PL.Controllers
         {
             return View();
         }
+        public async Task<IActionResult> Issues()
+        {
+            var website = await _unitOfWork.GetRepository<Website>().FindAsync(web => web.Id == 1);
+
+            if (website != null)
+            {
+                bool isVisible = website.Select(w => w.IsVisible).FirstOrDefault();
+                if (isVisible)
+                {
+                    return RedirectToAction("Index");
+                }
+            }
+
+            return View();
+        }
+
         public async Task<IActionResult> Profile()
         {
             var user = await _userManager.GetUserAsync(User);

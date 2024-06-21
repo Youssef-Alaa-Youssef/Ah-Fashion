@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Issues";
+    Layout = "_Auth";
+}
+
+<style>
+
+
+    .maintenance-container {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 600px;
+    }
+
+        .maintenance-container h1 {
+            color: #d9534f;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+    .maintenance-message {
+        color: #666666;
+        font-size: 18px;
+    }
+
+        .maintenance-message h2 {
+            color: #d9534f;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .maintenance-message p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+</style>
+<div class="container mt-5 mb-5">
+
+    @if (User.IsInRole("Super Admin"))
+    {
+        <p class="mb-3">
+            <a asp-controller="Website" asp-action="Index" class="btn btn-outline-warning">Website Setting</a>
+        </p>
+    }
+
+<div class="maintenance-container">
+    <h1>Website Currently Closed for Maintenance</h1>
+    <div class="maintenance-message">
+        <h2>We'll be back soon!</h2>
+        <p>We are currently performing some maintenance tasks to improve your user experience.</p>
+        <p>Please try again later. Thank you for your understanding and patience.</p>
+    </div>
+</div>
+
+    </div>

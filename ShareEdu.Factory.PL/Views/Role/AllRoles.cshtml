@@ -1,0 +1,87 @@
+﻿@model IList<ShareEdu.Factory.DAL.Models.Auth.ApplicationRoles>
+@{
+    ViewData["Title"] = "AllRoles";
+}
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
+<style>
+    #myTable {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        border: 1px solid #dddddd; /* Light border around the table */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    }
+
+        #myTable th,
+        #myTable td {
+            padding: 12px; /* Padding for better spacing */
+            text-align: center; /* Center-align text */
+            border-bottom: 1px solid #dddddd; /* Bottom border for all cells */
+        }
+
+        #myTable th {
+            background-color: #f2f2f2; /* Light gray background for header */
+            color: #333333; /* Dark text color for header */
+            font-weight: bold; /* Bold font for header */
+        }
+
+        #myTable tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternate row background color */
+        }
+
+        #myTable tbody tr:hover {
+            background-color: #f2f2f2; /* Hover background color */
+        }
+
+</style>
+<div class="container mt-5 mb-5">
+    <h1>All Roles</h1>
+
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Role Name (En)</th>
+                <th>Role Name (Ar)</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Count; i++)
+            {
+                <tr>
+                    <td>@(i + 1)</td>
+                    <td>@Model[i].Name</td>
+                    <td>@Model[i].RoleNameAr</td>
+                    <td><a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@Model[i].Id">Update</a></td>
+                    <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@Model[i].Id">Delete</a></td>
+
+
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

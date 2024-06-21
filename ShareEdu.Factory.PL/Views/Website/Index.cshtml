@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ShareEdu.Factory.DAL.Models.Settings.Website>
+
+@{
+    ViewData["Title"] = "Website Index";
+}
+
+<div class="container mt-5 mb-5">
+<h1>Websites</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Domain</th>
+            <th>Company Name</th>
+            <th>Now</th>
+            <th>Is Visible</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var website in Model)
+        {
+            <tr>
+                <td>@website.Id</td>
+                <td>@website.Name</td>
+                <td>@website.Domain</td>
+                <td>@website.CompanyName</td>
+                <td>@website.Now</td>
+                <td>@(website.IsVisible ? "Yes" : "No")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@website.Id">Edit</a> 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>

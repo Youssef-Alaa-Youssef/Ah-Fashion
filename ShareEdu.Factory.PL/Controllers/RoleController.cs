@@ -4,11 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShareEdu.Factory.DAL.Models.Auth;
+using ShareEdu.Factory.DAL.Models.Employment;
 using ShareEdu.Factory.PL.ViewModels.Auth;
 
 namespace ShareEdu.Factory.Controllers
 {
-    [Authorize(Roles = "Admin,Super Admin")]
+    [Authorize(Roles = "Super Admin")]
     public class RoleController : Controller
     {
         private readonly RoleManager<ApplicationRoles> _roleManager;
@@ -47,7 +48,10 @@ namespace ShareEdu.Factory.Controllers
 
             return View(userViewModels);
         }
-
+        public async Task<IActionResult> AllRoles()
+        {
+            return View(await _roleManager.Roles.ToListAsync());
+        }
         // GET: Role/AssignRoles
         [HttpGet]
         public async Task<IActionResult> AssignRoles([FromQuery]string userId)
@@ -84,19 +88,21 @@ namespace ShareEdu.Factory.Controllers
             var user = await _userManager.FindByIdAsync(model.UserId);
             if (user == null)
             {
+                TempData["Error"] = "Invalid Options";
                 return NotFound();
             }
 
             // Remove all existing roles
             var userRoles = await _userManager.GetRolesAsync(user);
             await _userManager.RemoveFromRolesAsync(user, userRoles);
-
+            TempData["Success"] = "Assign Role Added Successfuly.";
             // Add selected roles
             var rolesToAdd = await _roleManager.Roles.Where(r => model.Roles.Contains(r.Id)).ToListAsync();
             var result = await _userManager.AddToRolesAsync(user, rolesToAdd.Select(r => r.Name));
 
             if (!result.Succeeded)
             {
+                TempData["Error"] = "Invalid Options";
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
@@ -123,12 +129,17 @@ namespace ShareEdu.Factory.Controllers
                 var result = await _roleManager.CreateAsync(role);
                 if (result.Succeeded)
                 {
+                TempData["Success"] = "Role Added Successfully.";
                     return RedirectToAction(nameof(Index));
                 }
                 foreach (var error in result.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
                 }
+            }
+            else
+            {
+                TempData["Error"] = "Invalid Options";
             }
             return View(role);
         }
@@ -181,7 +192,12 @@ namespace ShareEdu.Factory.Controllers
                 var result = await _roleManager.UpdateAsync(existingRole);
                 if (result.Succeeded)
                 {
+                    TempData["Success"] = "Role Updated Successfully.";
                     return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    TempData["Error"] = "Invalid Options";
                 }
 
                 foreach (var error in result.Errors)
@@ -209,9 +225,9 @@ namespace ShareEdu.Factory.Controllers
         }
 
         // POST: /Role/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(string id)
+        public async Task<IActionResult> DeleteConfirmed([FromForm]string id)
         {
             var role = await _roleManager.FindByIdAsync(id);
 
@@ -220,14 +236,19 @@ namespace ShareEdu.Factory.Controllers
 
             if (usersInRole.Any())
             {
-                ModelState.AddModelError("", "Cannot delete role with associated users.");
-                return RedirectToAction(nameof(Index));
+                ViewData["Error"] = "Cannot delete role with associated users.";
+                return RedirectToAction(nameof(AllRoles));
             }
 
             var result = await _roleManager.DeleteAsync(role);
             if (result.Succeeded)
             {
+                TempData["Success"] = "Role Deleted Successfully.";
                 return RedirectToAction(nameof(Index));
+            }
+            else
+            {
+                TempData["Error"] = "Invalid Options";
             }
             foreach (var error in result.Errors)
             {

@@ -7,20 +7,18 @@ using System.Threading.Tasks;
 
 namespace ShareEdu.Factory.DAL.Models.Products
 {
-    internal class Product
+    public class Product
     {
         public int ID { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public DateOnly Expire { get; set; }
+        [ForeignKey("Category")]
+        public int CategoryID { get; set; }
+        public virtual ProductCategory Category { get; set; }
 
         [ForeignKey("Size")]
-        public Size SizeID { get; set; }
-        public Size Size { get; set; }
-
-        public Product()
-        {
-
-        }
+        public int SizeID { get; set; }
+        public virtual Size Size { get; set; }
     }
 }

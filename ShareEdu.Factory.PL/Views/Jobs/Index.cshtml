@@ -4,6 +4,24 @@
     ViewData["Title"] = "Jobs";
 }
 
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
 <style>
     body {
         font-weight: 700; /* Ensure all text inherits this */
@@ -80,6 +98,22 @@
 </style>
 
 <div class="container-fluid mt-5">
+    @{
+        if (User.IsInRole("Admin") || User.IsInRole("Recruitment Officer"))
+        {
+            
+            <span class="mr-1">
+                <a asp-action="AllJobs" class="btn btn-outline-primary">All Jobs Here</a>
+            </span>
+            <span class="mr-1">
+                <a asp-action="Index" asp-controller="DynamicInputs" class="btn btn-outline-primary">Create Inputs Form</a>
+            </span>
+            <span class="mr-1">
+                <a asp-action="Create" class="btn btn-outline-primary">Create a Job</a>
+            </span>
+        }
+    }
+
     @foreach (var category in Model)
     {
         <h2 class="category-header">@category.Name</h2>

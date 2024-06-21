@@ -4,7 +4,24 @@
     Layout = "_Auth";
 
 }
-
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
 
 
 <div class="card-body">
@@ -78,7 +95,11 @@
         </div>
         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
     <button class="button-submit">Sign Up</button>
-    <p class="p">
+        <p class="p mt-1 mb-1"> <span class="span"><a asp-controller="Home" asp-action="Index">Back To Home</a></span>
+        <p class="p">
         Do you have an account? <span class="span"><a asp-action="LogIn">Log In</a></span>
 </form>
 </<div>
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
+        }

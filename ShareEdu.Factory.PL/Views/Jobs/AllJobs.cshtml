@@ -1,0 +1,98 @@
+﻿
+@{
+    ViewData["Title"] = "AllJobs";
+}
+@{
+    if (TempData["Success"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showSuccess('@TempData["Success"]');
+            });
+        </script>
+    }
+    else if (TempData["Error"] != null)
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                showError('@TempData["Error"]');
+            });
+        </script>
+    }
+}
+<style>
+    #myTable {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        border: 1px solid #dddddd; /* Light border around the table */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    }
+
+        #myTable th,
+        #myTable td {
+            padding: 12px; /* Padding for better spacing */
+            text-align: center; /* Center-align text */
+            border-bottom: 1px solid #dddddd; /* Bottom border for all cells */
+        }
+
+        #myTable th {
+            background-color: #f2f2f2; /* Light gray background for header */
+            color: #333333; /* Dark text color for header */
+            font-weight: bold; /* Bold font for header */
+        }
+
+        #myTable tbody tr:nth-child(even) {
+            background-color: #f9f9f9; /* Alternate row background color */
+        }
+
+        #myTable tbody tr:hover {
+            background-color: #f2f2f2; /* Hover background color */
+        }
+
+</style>
+<div class="container mt-5 mb-5">
+    @model IEnumerable<ShareEdu.Factory.DAL.Models.Employment.Jobs> // Adjust namespace as necessary
+
+    <h1>All Jobs</h1>
+
+    <table id="myTable" class="mb-5">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Responsibilities</th>
+                <th>Salary</th>
+                <th>Location</th>
+                <th>Posted Date</th>
+                <th>Last Date To Apply</th>
+                <th>Is Open</th>
+                <th>Category</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Model)
+            {
+                <tr>
+                    <td>@job.Title</td>
+                    <td>@job.Description</td>
+                    <td>@job.Responsibilities</td>
+                    <td>@job.Salary</td>
+                    <td>@job.Location</td>
+                    <td>@job.PostedDate.ToShortDateString()</td>
+                    <td>@job.LastDateToApply.ToShortDateString()</td>
+                    <td>@job.IsOpen</td>
+                    <td>@job.Category.Name</td>
+                    <td><a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@job.Id">Update</a></td>
+                    <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@job.Id">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+

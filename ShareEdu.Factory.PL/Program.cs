@@ -49,7 +49,7 @@ namespace ShareEdu.Factory.PL
             builder.Services.AddScoped<IEmailService, EmailSender>();
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
+            if (!app.Environment.IsDevelopment())
             {
                 app.UseStatusCodePagesWithReExecute("/Home/ErrorProd");
                 app.UseHsts();
