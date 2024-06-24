@@ -365,19 +365,19 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         new
                         {
                             Id = 1,
-                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8739),
+                            AddTime = new DateTime(2024, 6, 24, 18, 24, 11, 304, DateTimeKind.Utc).AddTicks(8980),
                             Name = "Software Development"
                         },
                         new
                         {
                             Id = 2,
-                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8743),
+                            AddTime = new DateTime(2024, 6, 24, 18, 24, 11, 304, DateTimeKind.Utc).AddTicks(8998),
                             Name = "Marketing"
                         },
                         new
                         {
                             Id = 3,
-                            AddTime = new DateTime(2024, 6, 21, 18, 17, 34, 932, DateTimeKind.Utc).AddTicks(8746),
+                            AddTime = new DateTime(2024, 6, 24, 18, 24, 11, 304, DateTimeKind.Utc).AddTicks(9001),
                             Name = "Finance"
                         });
                 });
@@ -514,6 +514,9 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("NameAr")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -533,6 +536,7 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         {
                             Id = 1,
                             Description = "Products for Men",
+                            ImagePath = "",
                             NameAr = "رجالي",
                             NameEn = "Men"
                         },
@@ -540,6 +544,7 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         {
                             Id = 2,
                             Description = "Products for Women",
+                            ImagePath = "",
                             NameAr = "نسائي",
                             NameEn = "Women"
                         },
@@ -547,6 +552,7 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         {
                             Id = 3,
                             Description = "Products for Kids",
+                            ImagePath = "",
                             NameAr = "أطفال",
                             NameEn = "Kids"
                         });
@@ -597,10 +603,16 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<int?>("SettingGroupId")
+                        .IsRequired()
+                        .HasColumnType("int");
+
                     b.Property<bool>("Visable")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SettingGroupId");
 
                     b.ToTable("Sections", (string)null);
                 });
@@ -641,6 +653,11 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<string>("Permission")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<bool>("Visable")
                         .HasColumnType("bit");
 
@@ -664,10 +681,11 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                             Id = 1,
                             Action = "Index",
                             Controller = "Home",
-                            CreatedAt = new DateTime(2024, 6, 21, 21, 17, 34, 951, DateTimeKind.Local).AddTicks(2697),
+                            CreatedAt = new DateTime(2024, 6, 24, 21, 24, 11, 328, DateTimeKind.Local).AddTicks(2769),
                             LinkNameAr = "العامة",
                             LinkNameEn = "General",
                             Name = "General Settings",
+                            Permission = "Admin",
                             Visable = true,
                             place = "1",
                             ranking = "1"
@@ -677,10 +695,11 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                             Id = 2,
                             Action = "AboutUs",
                             Controller = "Home",
-                            CreatedAt = new DateTime(2024, 6, 21, 21, 17, 34, 951, DateTimeKind.Local).AddTicks(2775),
+                            CreatedAt = new DateTime(2024, 6, 24, 21, 24, 11, 328, DateTimeKind.Local).AddTicks(2844),
                             LinkNameAr = "نبذا عنا",
                             LinkNameEn = "About Us",
                             Name = "About Settings",
+                            Permission = "User",
                             Visable = true,
                             place = "2",
                             ranking = "2"
@@ -733,7 +752,7 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                             Domain = "http://ah-fashion.runasp.net/",
                             IsVisible = true,
                             Name = "Ah Fashion",
-                            Now = new DateTime(2024, 6, 21, 18, 17, 34, 953, DateTimeKind.Utc).AddTicks(8378)
+                            Now = new DateTime(2024, 6, 24, 18, 24, 11, 330, DateTimeKind.Utc).AddTicks(5142)
                         });
                 });
 
@@ -854,6 +873,17 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
                     b.Navigation("Size");
                 });
 
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Settings.Section", b =>
+                {
+                    b.HasOne("ShareEdu.Factory.DAL.Models.Settings.SettingGroup", "SettingGroup")
+                        .WithMany("Sections")
+                        .HasForeignKey("SettingGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SettingGroup");
+                });
+
             modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Employment.DynamicInput", b =>
                 {
                     b.Navigation("Options");
@@ -877,6 +907,11 @@ namespace ShareEdu.Factory.DAL.Data.Migrations
             modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Products.ProductCategory", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ShareEdu.Factory.DAL.Models.Settings.SettingGroup", b =>
+                {
+                    b.Navigation("Sections");
                 });
 #pragma warning restore 612, 618
         }

@@ -11,6 +11,9 @@ using ShareEdu.Factory.DAL.Models.Auth;
 using ShareEdu.Factory.PL.Helper;
 using ShareEdu.Factory.PL.Services;
 using ShareEdu.Factory.PL.Services.Email;
+using ShareEdu.Factory.PL.Services.UploadFile;
+using Microsoft.AspNetCore.Diagnostics;
+using ShareEdu.Factory.PL.Services.NavbarSettings;
 
 namespace ShareEdu.Factory.PL
 {
@@ -32,7 +35,11 @@ namespace ShareEdu.Factory.PL
 
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IFileService, FileService>();
+            builder.Services.AddScoped<IVideoService, VideoService>();
+
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            builder.Services.AddScoped<INavigationService, NavigationService>();
 
             builder.Services.AddIdentity<IdentityUser, ApplicationRoles>(option=> option.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<FactoryDbContext>()
@@ -53,9 +60,20 @@ namespace ShareEdu.Factory.PL
             {
                 app.UseStatusCodePagesWithReExecute("/Home/ErrorProd");
                 app.UseHsts();
-            }
-           
+            
 
+            app.UseExceptionHandler(errorApp =>
+            {
+                errorApp.Run(async context =>
+                {
+                    // Log the error
+                    var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+                    var exception = exceptionHandlerPathFeature?.Error;
+                    context.Response.Redirect("/Home/ErrorProd");
+                    await Task.CompletedTask;
+                });
+            });
+            }
             app.UseHttpsRedirection();
 
             app.UseStaticFiles();

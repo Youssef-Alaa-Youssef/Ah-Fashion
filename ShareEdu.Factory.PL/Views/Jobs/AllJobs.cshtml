@@ -1,4 +1,4 @@
-﻿
+﻿ @model IEnumerable<ShareEdu.Factory.DAL.Models.Employment.Jobs> // Adjust namespace as necessary
 @{
     ViewData["Title"] = "AllJobs";
 }
@@ -52,10 +52,14 @@
         }
 
 </style>
-<div class="container mt-5 mb-5">
-    @model IEnumerable<ShareEdu.Factory.DAL.Models.Employment.Jobs> // Adjust namespace as necessary
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">   
 
     <h1>All Jobs</h1>
+            @Html.Partial("_SearchInputPartial", new Tuple<string, string, string>("AllJobs", "Search", ViewBag.query ?? ""))
 
     <table id="myTable" class="mb-5">
         <thead>
@@ -74,25 +78,38 @@
 
             </tr>
         </thead>
-        <tbody>
-            @foreach (var job in Model)
-            {
-                <tr>
-                    <td>@job.Title</td>
-                    <td>@job.Description</td>
-                    <td>@job.Responsibilities</td>
-                    <td>@job.Salary</td>
-                    <td>@job.Location</td>
-                    <td>@job.PostedDate.ToShortDateString()</td>
-                    <td>@job.LastDateToApply.ToShortDateString()</td>
-                    <td>@job.IsOpen</td>
-                    <td>@job.Category.Name</td>
-                    <td><a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@job.Id">Update</a></td>
-                    <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@job.Id">Delete</a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
+                <tbody>
+                    @if (Model != null && Model.Any())
+                    {
+                        @foreach (var job in Model)
+                        {
+                            <tr>
+                                <td>@job.Title</td>
+                                <td>@job.Description</td>
+                                <td>@job.Responsibilities</td>
+                                <td>@job.Salary</td>
+                                <td>@job.Location</td>
+                                <td>@job.PostedDate.ToShortDateString()</td>
+                                <td>@job.LastDateToApply.ToShortDateString()</td>
+                                <td>@(job.IsOpen ? "Open" : "Closed")</td>
+                                <td>@job.Category.Name</td>
+                                <td><a class="btn btn-outline-success" asp-action="Edit" asp-route-id="@job.Id">Update</a></td>
+                                <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@job.Id">Delete</a></td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="10" class="text-center">No jobs found.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
 
 </div>
+</div>
+</div>
+
+
 

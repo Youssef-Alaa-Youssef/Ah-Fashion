@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShareEdu.Factory.BLL.Interfaces;
 using ShareEdu.Factory.BLL.InterFaces;
 using ShareEdu.Factory.DAL.Models.Settings;
-using System;
 using System.Threading.Tasks;
 
 namespace ShareEdu.Factory.Controllers
@@ -44,28 +44,34 @@ namespace ShareEdu.Factory.Controllers
         }
 
         // GET: Sections/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            await PopulateSettingGroupsDropDownAsync();
             return View();
         }
 
-        // POST: Sections/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Visable,CreatedAt")] Section section)
+        public async Task<IActionResult> Create([Bind("Id,Name,Visable,CreatedAt,SettingGroupId")] Section section)
         {
+            await PopulateSettingGroupsDropDownAsync();
+
             if (ModelState.IsValid)
             {
                 await _unitOfWork.GetRepository<Section>().AddAsync(section);
                 await _unitOfWork.SaveChangesAsync();
+                TempData["Success"] = "Section created successfully.";
                 return RedirectToAction(nameof(Index));
             }
             return View(section);
         }
 
+
         // GET: Sections/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            await PopulateSettingGroupsDropDownAsync();
+
             if (id == null)
             {
                 return NotFound();
@@ -82,8 +88,10 @@ namespace ShareEdu.Factory.Controllers
         // POST: Sections/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, Section section)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Visable,CreatedAt,SettingGroupId")] Section section)
         {
+            await PopulateSettingGroupsDropDownAsync();
+
             if (id != section.Id)
             {
                 return NotFound();
@@ -93,16 +101,15 @@ namespace ShareEdu.Factory.Controllers
             {
                 try
                 {
-                    TempData["Success"] = "Sections Updated Successfully";
-                    
                     await _unitOfWork.GetRepository<Section>().UpdateAsync(section);
                     await _unitOfWork.SaveChangesAsync();
+                    TempData["Success"] = "Section updated successfully.";
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    TempData["Error"] = "Invalid Options";
+                    TempData["Error"] = "Concurrency error occurred. Please try again.";
                 }
-                return RedirectToAction(nameof(Index));
             }
             return View(section);
         }
@@ -124,21 +131,28 @@ namespace ShareEdu.Factory.Controllers
             return View(section);
         }
 
-        [HttpPost]
+        // POST: Sections/Delete/5
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int Id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var section = await _unitOfWork.GetRepository<Section>().GetByIdAsync(Id);
+            var section = await _unitOfWork.GetRepository<Section>().GetByIdAsync(id);
+            if (section == null)
+            {
+                return NotFound();
+            }
+
             await _unitOfWork.GetRepository<Section>().RemoveAsync(section);
             await _unitOfWork.SaveChangesAsync();
+            TempData["Success"] = "Section deleted successfully.";
             return RedirectToAction(nameof(Index));
         }
 
-        private async Task<bool> SectionExists(int id)
+        private async Task PopulateSettingGroupsDropDownAsync()
         {
-            var section = await _unitOfWork.GetRepository<Section>().FindAsync(x => x.Id == id);
-            return section != null;
+            var settingGroups = await _unitOfWork.GetRepository<SettingGroup>().GetAllAsync();
+            var rolesSelectList = new SelectList(settingGroups, "Id", "Name");
+            ViewData["SettingGroups"] = rolesSelectList;
         }
-
     }
 }

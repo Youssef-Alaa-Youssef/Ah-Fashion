@@ -1,15 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShareEdu.Factory.DAL.Models.Settings;
-using System.Collections.Generic;
 
 namespace ShareEdu.Factory.DAL.Data.Configurations
 {
-    public class SettingGroupConfigurations : IEntityTypeConfiguration<SettingGroup>
+    public class SettingGroupConfiguration : IEntityTypeConfiguration<SettingGroup>
     {
         public void Configure(EntityTypeBuilder<SettingGroup> builder)
         {
-            builder.ToTable("SettingGroups"); // Optional: Set the table name if different
+            builder.ToTable("SettingGroups"); // Set table name if different
 
             // Primary key
             builder.HasKey(sg => sg.Id);
@@ -24,7 +23,9 @@ namespace ShareEdu.Factory.DAL.Data.Configurations
             builder.Property(sg => sg.Visable).IsRequired();
             builder.Property(sg => sg.ranking).HasMaxLength(50); // Adjust max length as necessary
             builder.Property(sg => sg.place).HasMaxLength(50); // Adjust max length as necessary
+            builder.Property(sg => sg.Permission).HasMaxLength(100);
 
+            // Seed initial data if needed
             builder.HasData(
                 new SettingGroup
                 {
@@ -37,7 +38,7 @@ namespace ShareEdu.Factory.DAL.Data.Configurations
                     Visable = true,
                     ranking = "1",
                     place = "1",
-    
+                    Permission = "Admin",
                 },
                 new SettingGroup
                 {
@@ -50,6 +51,7 @@ namespace ShareEdu.Factory.DAL.Data.Configurations
                     Visable = true,
                     ranking = "2",
                     place = "2",
+                    Permission = "User",
                 }
             );
         }

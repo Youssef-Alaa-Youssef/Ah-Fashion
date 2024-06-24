@@ -10,6 +10,11 @@ namespace ShareEdu.Factory.PL.Services.UploadFile
         public FileService(IWebHostEnvironment webHostEnvironment)
         {
             _fileStoragePath = Path.Combine(webHostEnvironment.WebRootPath, "uploads");
+
+            if (!Directory.Exists(_fileStoragePath))
+            {
+                Directory.CreateDirectory(_fileStoragePath);
+            }
         }
 
         public async Task<string> UploadFileAsync(IFormFile file)

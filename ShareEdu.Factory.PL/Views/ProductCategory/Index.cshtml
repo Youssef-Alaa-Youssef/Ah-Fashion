@@ -51,8 +51,12 @@
         }
 
 </style>
-<div class="container mt-5 mb-5">
-    @model IEnumerable<ShareEdu.Factory.DAL.Models.Products.ProductCategory>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            @model IEnumerable<ShareEdu.Factory.DAL.Models.Products.ProductCategory>
 
     <h1>Categories</h1>
 
@@ -92,3 +96,5 @@
     </table>
 
 </div>
+</div>
+</section>

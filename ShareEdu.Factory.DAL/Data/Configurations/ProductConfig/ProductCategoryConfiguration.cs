@@ -21,9 +21,9 @@ namespace ShareEdu.Factory.DAL.Data.Configurations.ProductConfig
             builder.Property(pc => pc.Description).IsRequired(false); // Description is optional
 
             builder.HasData(
-                new ProductCategory { Id = 1, NameEn = "Men", NameAr = "رجالي", Description = "Products for Men" },
-                new ProductCategory { Id = 2, NameEn = "Women", NameAr = "نسائي", Description = "Products for Women" },
-                new ProductCategory { Id = 3, NameEn = "Kids", NameAr = "أطفال", Description = "Products for Kids" }
+                new ProductCategory { Id = 1, NameEn = "Men", NameAr = "رجالي", Description = "Products for Men" ,ImagePath = ""},
+                new ProductCategory { Id = 2, NameEn = "Women", NameAr = "نسائي", Description = "Products for Women", ImagePath = ""},
+                new ProductCategory { Id = 3, NameEn = "Kids", NameAr = "أطفال", Description = "Products for Kids", ImagePath = "" }
             );
         }
     }

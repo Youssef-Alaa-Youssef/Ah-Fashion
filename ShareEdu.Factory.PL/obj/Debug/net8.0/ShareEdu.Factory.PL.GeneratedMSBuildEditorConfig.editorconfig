@@ -42,6 +42,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +68,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/LogIn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dPdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Auth/ResetPasswordConfirmation.cshtml]
@@ -96,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Home/ErrorProd.cshtml]
@@ -242,12 +262,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_AuthUserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRoVXNlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ConfirmationModalPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db25maXJtYXRpb25Nb2RhbFBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_SearchInputPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TZWFyY2hJbnB1dFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [G:/ShareEdu.Factory/ShareEdu.Factory.PL/Views/Shared/_ToastrPartial.cshtml]

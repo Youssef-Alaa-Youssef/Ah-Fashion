@@ -3,8 +3,11 @@
     ViewData["Title"] = "Delete";
 }
 
-<div class="container mt-5 mb-5">
+<section class="section dashboard container-fluid">
+    <div class="row">
 
+        <!-- Left side columns -->
+        <div class="col-lg-8">
     @model ShareEdu.Factory.DAL.Models.Products.ProductCategory
 
     <h1>Delete Product Category</h1>
@@ -35,7 +38,10 @@
                 <a asp-action="Index" class="btn btn-secondary">Cancel</a>
             </p>
         </form>
+
     </div>
 
 </div>
+</div>
+</section>
 

@@ -1,18 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShareEdu.Factory.DAL.Models.Settings
 {
     public class Section
     {
         public int Id { get; set; }
+
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
+
+        [DisplayName("Visible")]
         public bool Visable { get; set; }
+
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-        //public ICollection<Content> Sections { get; set; } = new HashSet<Content>();
-    }
+
+        [DisplayName("Setting Group")]
+        public int? SettingGroupId { get; set; }    }
 }

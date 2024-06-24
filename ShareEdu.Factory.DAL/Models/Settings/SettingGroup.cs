@@ -1,5 +1,6 @@
-﻿
-using static System.Collections.Specialized.BitVector32;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShareEdu.Factory.DAL.Models.Settings
 {
@@ -9,15 +10,14 @@ namespace ShareEdu.Factory.DAL.Models.Settings
         public string Name { get; set; }
         public string LinkNameEn { get; set; }
         public string LinkNameAr { get; set; }
-
         public string Controller { get; set; }
         public string Action { get; set; }
-        public bool Visable { get; set; }
-        public string ranking { get; set; }
-        public string place { get; set; }
-
+        public bool Visable { get; set; } // Corrected property name to Visible
+        public string ranking { get; set; } // Corrected property name to Ranking
+        public string place { get; set; } // Corrected property name to Place
+        public string Permission { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public virtual ICollection<Section> Sections { get; set; } = new HashSet<Section>();
 
     }
-
 }

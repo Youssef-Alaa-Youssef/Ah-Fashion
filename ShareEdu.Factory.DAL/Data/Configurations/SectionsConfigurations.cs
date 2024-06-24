@@ -3,6 +3,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ShareEdu.Factory.DAL.Models.Settings;
+using System.Reflection.Emit;
 
 namespace ShareEdu.Factory.DAL.Data.Configurations
 {

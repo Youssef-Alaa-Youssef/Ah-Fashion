@@ -48,9 +48,18 @@ namespace ShareEdu.Factory.Controllers
 
             return View(userViewModels);
         }
-        public async Task<IActionResult> AllRoles()
+        public async Task<IActionResult> AllRoles(string query)
         {
-            return View(await _roleManager.Roles.ToListAsync());
+            IQueryable<IdentityRole> rolesQuery = _roleManager.Roles; 
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                ViewBag.query = query;
+
+                rolesQuery = rolesQuery.Where(r => r.Name.Contains(query));
+            }
+            var roles = await rolesQuery.ToListAsync();
+            return View(roles);
         }
         // GET: Role/AssignRoles
         [HttpGet]

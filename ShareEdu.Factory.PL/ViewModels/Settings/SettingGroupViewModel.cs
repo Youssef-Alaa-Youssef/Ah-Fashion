@@ -21,5 +21,6 @@ namespace ShareEdu.Factory.PL.ViewModels.Settings
         public bool Visable { get; set; }
         public string Ranking { get; set; }
         public string Place { get; set; }
+        public string Permission { get; set; }
     }
 }

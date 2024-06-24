@@ -2,8 +2,12 @@
 @{
     ViewData["Title"] = "Edit Role";
 }
-<div class="container mt-5 mb-5">
-<h1>Edit Role</h1>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <h1>Edit Role</h1>
 
 <form asp-action="Edit" method="post" class="needs-validation" novalidate>
     <input type="hidden" asp-for="Id" />
@@ -22,6 +26,8 @@
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
 </div>
+</div>
+</section>
 @section Scripts {
     <script>
         // Client-side validation setup if needed

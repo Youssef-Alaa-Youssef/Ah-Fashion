@@ -4,8 +4,12 @@
     ViewData["Title"] = "Assign Roles";
 }
 
-<div class="container mt-5">
-    <h1>Assign Roles for @Model.UserName</h1>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <h1>Assign Roles for @Model.UserName</h1>
 
     <form asp-action="AssignRoles" method="post">
         <input type="hidden" asp-for="UserId" />
@@ -28,6 +32,8 @@
         <button type="submit" class="btn btn-primary">Assign Roles</button>
     </form>
 </div>
+</div>
+</section>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

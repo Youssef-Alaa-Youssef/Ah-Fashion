@@ -2,7 +2,9 @@
 @{
     ViewData["Title"] = "Create Setting Group";
 }
-<div class="container mt-5 mb-5">
+<section class="section dashboard container-fluid">
+    <div class="row">
+        <div class="col-lg-8">
 
 <h1>Create Setting Group</h1>
 
@@ -12,6 +14,14 @@
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
+                <div class="form-group">
+                    <label asp-for="Permission" class="control-label"></label>
+                    <select asp-for="Permission" class="form-control" asp-items="@((IEnumerable<SelectListItem>)ViewData["Roles"])">
+                        <option value="User">Select Role</option>
+                    </select>
+                    <span asp-validation-for="Permission" class="text-danger"></span>
+                </div>
+
     <div class="form-group">
         <label asp-for="LinkNameEn"></label>
         <input asp-for="LinkNameEn" class="form-control" />
@@ -34,8 +44,8 @@
     </div>
     <div class="form-group">
         <label asp-for="Visable"></label>
-        <input asp-for="Visable" class="form-control" />
-        <span asp-validation-for="Visable" class="text-danger"></span>
+                <input asp-for="Visable" class="form-check-input" />
+                <span asp-validation-for="Visable" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="Ranking"></label>
@@ -49,5 +59,10 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Create</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+
 </form>
 </div>
+    </div>
+
+</section>

@@ -22,7 +22,8 @@ namespace ShareEdu.Factory.PL.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var sections = await _unitOfWork.GetRepository<Section>().GetAllAsync();
+            var section = await _unitOfWork.GetRepository<Section>().GetAllAsync();
+            var sections = section.Where(x => x.SettingGroupId == 1).ToList(); 
             var website = await _unitOfWork.GetRepository<Website>().FindAsync(web => web.Id == 1);
 
             if (website != null)
@@ -38,7 +39,11 @@ namespace ShareEdu.Factory.PL.Controllers
             ViewBag.Categories = categories.ToList();
             return View(sections);
         }
+        public IActionResult Dashboard()
+        {
 
+            return View();
+        }
         public IActionResult ContactUs()
         {
 
@@ -62,8 +67,11 @@ namespace ShareEdu.Factory.PL.Controllers
                 bool isVisible = website.Select(w => w.IsVisible).FirstOrDefault();
                 if (isVisible)
                 {
+                    HttpContext.Response.Cookies.Append("WebsiteSetting", isVisible.ToString());
+
                     return RedirectToAction("Index");
                 }
+                
             }
 
             return View();

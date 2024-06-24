@@ -1,0 +1,344 @@
+﻿@inject INavigationService NavigationService
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Dashboard - Ah Fashion</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/images/icons/favicon-16x16.png">
+
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/loader.css" />
+
+    <partial name="_ToastrPartial" />
+    <style>
+        /* Custom styling for scrollbars */
+        /* WebKit (Chrome, Safari, Edge) */
+        ::-webkit-scrollbar {
+            width: 10px; /* Width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Color of the track (the area behind the scrollbar) */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #888; /* Color of the scrollbar thumb (handle) */
+            border-radius: 10px; /* Rounded corners of the thumb */
+            border: 3px solid #f1f1f1; /* Border around the thumb */
+            background-image: linear-gradient(to bottom, #999, #888); /* Gradient background */
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1); /* Shadow on the thumb */
+        }
+
+        /* Firefox */
+        /* Note: Firefox does not support direct scrollbar styling, this is a workaround */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: #888 #f1f1f1;
+        }
+
+        body {
+            overflow-y: scroll; /* Ensure scrollbar appears even if content does not overflow */
+        }
+
+        .company-logo {
+            height: 80px; /* Set the height of the image */
+            margin-right: 10px; /* Add some margin to the right */
+            filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); /* Add drop shadow */
+            border-radius: 5px; /* Add border radius for rounded corners */
+        }
+
+            /* Optional hover effect */
+            .company-logo:hover {
+                transform: scale(1.2); /* Scale up the image on hover */
+                transition: transform 0.5s ease; /* Smooth transition */
+            }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="spinner-container">
+        <div class="spinner">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a asp-action="Index" asp-controller="Home" class="logo d-flex align-items-center">
+                <img src="~/images/logo.jpg" class="company-logo" alt="Ah Telecom Logo">
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">3</span>
+                    </a><!-- End Messages Icon -->
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="~/assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">@User.Identity.Name</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>@User.Identity.Name</h6>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" asp-action="Profile" asp-controller="Home">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" asp-action="RestPassword" asp-controller="Auth">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Forget Password</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center"
+                               asp-controller="Auth"
+                               asp-action="LogOut"
+                            >
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index" asp-controller="Home">
+                    <i class="bi bi-grid"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Home" asp-controller="Dashboard">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            @foreach (var link in await NavigationService.GetNavbarLinksAsync())
+            {
+                if (link.Place == "3" && link.Visible)
+                {
+                    string collapseId = $"components-{link.Controller}_{link.Action}";
+                    string parentId = $"components-{link.Controller}_{link.Action}";
+
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" data-bs-target="#@collapseId" data-bs-toggle="collapse" href="#">
+                                <i class="bi bi-menu-button-wide"></i><span>@link.Name</span><i class="bi bi-chevron-down ms-auto"></i>
+                            </a>
+                            <ul id="@collapseId" class="nav-content collapse" data-bs-parent="#@parentId">
+                                <li>
+                                    <a asp-controller="@link.Controller" asp-action="@link.Action">
+                                        <i class="bi bi-circle"></i><span>@link.LinkNameEn</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                }
+            }
+
+
+
+
+
+
+            @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
+            {
+                @if (User.IsInRole("Super Admin"))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-menu-button-wide"></i><span>Website Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="components-nav" class="nav-content collapse" data-bs-parent="#components-nav">
+                            <li>
+                                <a asp-controller="Website" asp-action="Index">
+                                    <i class="bi bi-circle"></i><span>Website Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-journal-text"></i><span>Settings Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="forms-nav" class="nav-content collapse" data-bs-parent="#forms-nav">
+
+                            <li>
+                                <a asp-controller="SettingGroups" asp-action="Index">
+                                    <i class="bi bi-circle"></i><span>Page Settings</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" data-bs-target="#User-nav" data-bs-toggle="collapse" href="#">
+                            <i class="bi bi-journal-text"></i><span>Users Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                        </a>
+                        <ul id="User-nav" class="nav-content collapse" data-bs-parent="#User-nav">
+
+                            <li>
+                                <a asp-controller="Auth" asp-action="Index">
+                                    <i class="bi bi-circle"></i><span>All Users</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                }
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-layout-text-window-reverse"></i><span>Category Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="charts-nav" class="nav-content collapse" data-bs-parent="#charts-nav">
+                        <li>
+                            <a asp-controller="ProductCategory" asp-action="Index">
+                                <i class="bi bi-circle"></i><span>Category</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-gem"></i><span>Roles Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="tables-nav" class="nav-content collapse" data-bs-parent="#tables-nav">
+  
+                        <li>
+                            <a asp-controller="Role" asp-action="Index">
+                                <i class="bi bi-circle"></i><span>Roles</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            }
+            @if (User.IsInRole("Admin") || User.IsInRole("Recruitment Officer") || User.IsInRole("Super Admin"))
+            {
+                <li class="nav-item">
+                    <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
+                        <i class="bi bi-gem"></i><span>Jobs Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+                    </a>
+                    <ul id="icons-nav" class="nav-content collapse" data-bs-parent="#icons-nav">
+
+                        <li>
+                            <a asp-controller="Jobs" asp-action="AllJobs">
+                                <i class="bi bi-circle"></i><span>All Jobs</span>
+                            </a>
+                        <li>
+                            <a asp-controller="Jobs" asp-action="Index">
+                                <i class="bi bi-circle"></i><span>Jobs</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            }
+
+      
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+            @RenderBody()
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Qadamlee - @DateTime.UtcNow.Year</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("loader").style.display = "flex";
+
+            setTimeout(function () {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("content").style.display = "block"; // Display content
+            }, 1000); // Adjust the timeout as per your application's loading time
+        });
+
+    </script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/js/main.js"></script>
+    @RenderSection("Scripts",required:false);
+</body>
+
+</html>

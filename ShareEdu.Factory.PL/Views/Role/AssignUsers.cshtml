@@ -1,7 +1,11 @@
 ﻿@model ShareEdu.Factory.PL.ViewModels.Auth.AssignUsersViewModel
 
-<div class="container mt-5 mb-5">
-<h1>Assign Users to Role: @Model.RoleName</h1>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <h1>Assign Users to Role: @Model.RoleName</h1>
 
 <form asp-action="AssignUsers" method="post" class="needs-validation" novalidate>
     <input type="hidden" asp-for="RoleId" />
@@ -21,6 +25,8 @@
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>
 </div>
+</div>
+</section>
 
 
 @section Scripts {

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using Org.BouncyCastle.Security.Certificates;
 using ShareEdu.Factory.PL.Helper;
 using ShareEdu.Factory.PL.Services.Email;
 using ShareEdu.Factory.PL.ViewModels.Auth;
@@ -30,22 +31,31 @@ namespace ShareEdu.Factory.PL.Controllers
             _signInManager = signInManager;
         }
         [Authorize(Roles ="Admin")]
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string query)
         {
-            var users = await _userManager.Users.ToListAsync<IdentityUser>();
+            List<IdentityUser> users;
 
-            var userViewModels = new List<UserViewModel>();
-
-            foreach (var user in users)
+            if (!string.IsNullOrEmpty(query))
             {
-                var viewModel = new UserViewModel
-                {
-                    Id = user.Id,
-                    UserName = user.UserName
-                };
-
-                userViewModels.Add(viewModel);
+                // Filter users by UserName containing the query string
+                users = await _userManager.Users
+                    .Where(u => u.UserName.Contains(query))
+                    .ToListAsync();
             }
+            else
+            {
+                // Fetch all users
+                users = await _userManager.Users.ToListAsync();
+            }
+
+            var userViewModels = users.Select(user => new UserViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName
+            }).ToList();
+
+            // Pass the query string back to the view
+            ViewBag.Query = query;
 
             return View(userViewModels);
         }
@@ -71,7 +81,7 @@ namespace ShareEdu.Factory.PL.Controllers
             if (result.Succeeded)
             {
                 TempData["Success"] = "Congratulations Login Successfully";
-                return RedirectToAction(nameof(Index), "Home");
+                return RedirectToAction("DashBoard", "Home");
             }
             if (!user.EmailConfirmed)
             {
@@ -201,8 +211,12 @@ namespace ShareEdu.Factory.PL.Controllers
         {
             return View();
         }
+        public IActionResult LogOut()
+        {
+            return View();
+        }
         [HttpPost]
-        public async Task<IActionResult> LogOut()
+        public async Task<IActionResult> AcctualLogOut()
         {
             TempData["Success"] = "You have been successfully logged out";
             await _signInManager.SignOutAsync();
@@ -339,5 +353,158 @@ namespace ShareEdu.Factory.PL.Controllers
                 return View();
             }
 
+        // Index action and other actions omitted for brevity
+
+        public async Task<IActionResult> Details(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new UserDetailsViewModel
+            {
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+                // Add other properties as needed
+            };
+
+            return View(viewModel);
         }
+
+        public async Task<IActionResult> Edit(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new UserEditViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+                // Add other properties as needed
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(string id, UserEditViewModel model)
+        {
+            if (id != model.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByIdAsync(id);
+
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                user.UserName = model.UserName;
+                user.Email = model.Email;
+                user.PhoneNumber = model.PhoneNumber;
+
+                var result = await _userManager.UpdateAsync(user);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction(nameof(Details), new { id = user.Id });
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+            }
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var viewModel = new UserDetailsViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+                // Add other properties as needed
+            };
+
+            return View(viewModel);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (result.Succeeded)
+            {
+                // Optionally, perform additional cleanup or logging
+                return RedirectToAction(nameof(Index));
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            // If deletion fails, return to delete confirmation page with errors
+            var viewModel = new UserDetailsViewModel
+            {
+                Id = user.Id,
+                UserName = user.UserName,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+                // Add other properties as needed
+            };
+
+            return View(viewModel);
+        }
+    }
 }

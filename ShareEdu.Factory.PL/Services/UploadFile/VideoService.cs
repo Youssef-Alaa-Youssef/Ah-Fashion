@@ -10,6 +10,10 @@ namespace ShareEdu.Factory.PL.Services.UploadFile
         public VideoService(IWebHostEnvironment webHostEnvironment)
         {
             _videoStoragePath = Path.Combine(webHostEnvironment.WebRootPath, "videos");
+            if (!Directory.Exists(_videoStoragePath))
+            {
+                Directory.CreateDirectory(_videoStoragePath);
+            }
         }
 
         public async Task<string> UploadVideoAsync(IFormFile video)

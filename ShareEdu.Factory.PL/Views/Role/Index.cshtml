@@ -21,8 +21,12 @@
         </script>
     }
 }
-<div class="container mt-5">
-    @{
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            @{
         if (User.IsInRole("Admin") || User.IsInRole("Recruitment Officer"))
         {
             <p>
@@ -97,3 +101,5 @@
         </tbody>
     </table>
 </div>
+</div>
+</section>

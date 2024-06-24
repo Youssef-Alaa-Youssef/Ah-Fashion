@@ -4,8 +4,12 @@
     ViewData["Title"] = "Create";
 }
 
-<div class="container">
-    <h1>Create Job</h1>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <h1>Create Job</h1>
     <div asp-validation-summary="ModelOnly"></div>
 
     <form asp-action="Create">
@@ -53,6 +57,8 @@
         <a asp-action="Index" class="btn btn-secondary">Back to List</a>
     </form>
 </div>
+</div>
+</section>
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

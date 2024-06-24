@@ -2,8 +2,11 @@
 @{
     ViewData["Title"] = "Edit Section";
 }
-<div class="container mt-5 mb-5">
+<section class="section dashboard container-fluid">
+    <div class="row">
 
+        <!-- Left side columns -->
+        <div class="col-lg-8">
 <h1>Edit Section</h1>
 
 <form asp-action="Edit">
@@ -14,9 +17,16 @@
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
+                <div class="form-group">
+                    <label asp-for="SettingGroupId" class="control-label"></label>
+                    <select asp-for="SettingGroupId" class="form-control" asp-items="@((IEnumerable<SelectListItem>)ViewData["SettingGroups"])">
+                        <option value="">Select Group</option>
+                    </select>
+                    <span asp-validation-for="SettingGroupId" class="text-danger"></span>
+                </div>
     <div class="form-group">
             <label asp-for="Visable"></label>
-            <input asp-for="Visable" class="form-control" />
+                    <input asp-for="Visable" class="form-check-input" />
             <span asp-validation-for="Visable" class="text-danger"></span>
     </div>
     <div class="form-group">
@@ -26,5 +36,9 @@
     </div>
 
     <button type="submit" class="btn btn-primary">Update</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+
 </form>
 </div>
+</div>
+</section>

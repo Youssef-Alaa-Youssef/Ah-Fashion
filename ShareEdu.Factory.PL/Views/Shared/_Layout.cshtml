@@ -1,4 +1,4 @@
-﻿
+﻿@inject INavigationService NavigationService
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,6 @@
 </head>
 
 <body>
-    <!-- Loader -->
     <div id="loader" class="spinner-container">
         <div class="spinner">
             <div></div>
@@ -82,39 +81,35 @@
                         <ul class="top-menu font-weight-bold">
                             <li>
                                 <ul>
-                                    @if (!User.IsInRole("Admin"))
+                                    @foreach (var link in await NavigationService.GetNavbarLinksAsync())
                                     {
-                                        <li><a href="tel:#"><i class="icon-phone"></i>Call: +20 102 565 1102</a></li>
-                                        <li><a asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                                        <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
-                                        <li>
-                                            <a asp-action="/WishList">
-                                                <i class="icon-heart-o"></i>
-                                                WishList
-                                                <span> (3) </span>
-                                            </a>
-                                        </li>
+                                        if (link.Place == "2" && link.Visible)
+                                        {
+                                            <li>
+                                                @if (link.LinkNameEn.Contains("CALL"))
+                                                {
+                                                    <a href="tel:#"><i class="icon-phone"></i>@link.LinkNameEn</a>
+                                                }
+                                                else
+                                                {
+                                                    <a href="@Url.Action(link.Action, link.Controller)">@link.LinkNameEn</a>
+                                                }
+                                            </li>
+                                        }
                                     }
-                                    @if (User.Identity.IsAuthenticated)
-                                    {
-                                        <li>
-                                            <div class="header-dropdown">
-                                                <a asp-controller="Home" asp-action="Profile"><i class="icon-user"></i>Profile</a>
-                                                <ul class="header-menu">
-                                                    <li>
-                                                        <a asp-controller="Auth" asp-action="LogOut" data-toggle="modal" data-target="#exampleModalLong"><i class="icon-user"></i>LogOut</a>
-                                                    </li>
-                                                    <li><a asp-controller="Auth" asp-action="RestPassword"><i class="icon-user"></i>Forget Password</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    }
-                                    else
+                                    @if (!User.Identity.IsAuthenticated)
                                     {
                                         <li><a asp-controller="Auth" asp-action="LogIn"><i class="icon-user"></i>LogIn</a></li>
                                         <li><a asp-controller="Auth" asp-action="SignUp"><i class="icon-user"></i>SignUp</a></li>
                                     }
+                                    else
+                                    {
+                                        <li><a asp-controller="Home" asp-action="Dashboard"><i class="icon-user"></i>Dashboard</a></li>
+                                    }
                                 </ul>
+                            </li>
+                        </ul>
+
                             </li>
                         </ul>
                     </div>
@@ -133,47 +128,15 @@
                         <a href="/" class="logo">
                             <img src="~/images/logo.jpg" alt="Ah Telecom Logo" width="200" height="30">
                         </a>
-
+                                           
                         <nav class="main-nav justify-content-center">
                             <ul class="menu sf-arrows ">
-                                @if (!User.IsInRole("Admin")) {
-                                <li class="megamenu-container-fluid ">
-                                    <a asp-controller="Home" asp-action="Index">Home</a>
-                                </li>
-                                <li>
-                                    <a asp-controller="Home" asp-action="FAQs" >FAQs</a>
-                                </li>
+                                @foreach (var link in await NavigationService.GetNavbarLinksAsync())
+                                {
+                                    if (link.Place == "1" && link.Visible)
+                                    {
+                                        <li><a href="@Url.Action(link.Action, link.Controller)">@link.LinkNameEn</a></li>
                                     }
-                                <li>
-                                    <a asp-controller="Jobs" asp-action="Index">
-                                        @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
-                                        {
-                                            <span>Jobs Dashboard</span>
-                                                                    }
-                                        else
-                                        {
-                                            <span>Jobs</span>
-                                        }
-                                    </a>
-                                </li>
-                                @if (User.IsInRole("Super Admin"))
-                                {
-                                    <li><a asp-controller="SettingGroups" asp-action="Index">Settings Dashboard</a></li>
-                                    <li><a asp-controller="Website" asp-action="Index"> Website Settings </a></li>
-
-                                }
-                                @if (User.IsInRole("Admin") || User.IsInRole("Super Admin"))
-                                {
-                                    <li><a asp-controller="Role" asp-action="Index">Role Dashboard</a></li>
-
-                                    <li><a asp-controller="Auth" asp-action="Index">Users Dashboard</a></li>
-                                    <li><a asp-controller="ProductCategory" asp-action="Index"> Category Dashboard </a></li>
-
-
-                                }
-                                @if (User.IsInRole("Recruitment Officer"))
-                                {
-                                    <li><a asp-controller="Jobs" asp-action="AllJobs">All Jobs</a></li>
                                 }
                             </ul>
                         </nav>
@@ -264,7 +227,7 @@
 
             <div class="footer-bottom">
                 <div class="container-fluid">
-                    <p class="footer-copyright">Copyright © @DateTime.UtcNow.Year <span class="active">Mo.Yo</span> . All Rights Reserved.</p>
+                    <p class="footer-copyright">Copyright © @DateTime.UtcNow.Year <span class="active">Qadamlee</span> . All Rights Reserved.</p>
                 </div>
             </div>
         </footer>

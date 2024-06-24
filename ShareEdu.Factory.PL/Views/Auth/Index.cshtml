@@ -31,8 +31,15 @@
         }
 
 </style>
-<div class="container mt-5 mb-5">
+
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+
     <h1 class="font-weight-bold text-center mb-4 mt-2">User Details</h1>
+                @Html.Partial("_SearchInputPartial", new Tuple<string, string, string>("Index", "Search", ViewBag.query ?? ""))
     <table id="myTable">
         <thead>
             <tr>
@@ -43,24 +50,35 @@
                 <th>Delete</th>
             </tr>
         </thead>
-        <tbody>
-            @foreach (var user in Model)
-            {
-                <tr>
-                    <td>@user.Id</td>
-                    <td>@user.UserName</td>
-                    <td><a class="btn btn-outline-info" asp-action="Details" asp-route-id="@user.Id">Detail</a></td>
-                    <td><a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@user.Id">Edit</a></td>
-                    <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@user.Id">Delete</a></td>
-                </tr>
-            }
-            <tr>
-                <td colspan="5" class="text-center">
-                    <button class="btn btn-outline-success mr-2" onclick="window.print()">Print</button>
-                    <button class="btn btn-outline-secondary mr-2">Print</button>
-                    <button class="btn btn-outline-info">PDF</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+                <tbody>
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>@user.Id</td>
+                                <td>@user.UserName</td>
+                                <td><a class="btn btn-outline-info" asp-action="Details" asp-route-id="@user.Id">Detail</a></td>
+                                <td><a class="btn btn-outline-warning" asp-action="Edit" asp-route-id="@user.Id">Edit</a></td>
+                                <td><a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@user.Id">Delete</a></td>
+                            </tr>
+                        }
+                        <tr>
+                            <td colspan="5" class="text-center">
+                                <button class="btn btn-outline-success mr-2" onclick="window.print()">Print</button>
+                                <button class="btn btn-outline-secondary mr-2">Another Action</button>
+                                <button class="btn btn-outline-info">PDF</button>
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center">No users found.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
 </div>
+</div>
+</section>

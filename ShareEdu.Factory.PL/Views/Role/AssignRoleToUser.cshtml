@@ -1,7 +1,11 @@
 ﻿@model ShareEdu.Factory.PL.ViewModels.Auth.ApplicationUserViewModel
 
-<div class="container mt-5 mb-5">
-<h1>Assign Role to User: @Model.UserName</h1>
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            <h1>Assign Role to User: @Model.UserName</h1>
 
 <p><strong>Email:</strong> @Model.Email</p>
 
@@ -34,6 +38,8 @@
     </div>
 </form>
 </div>
+</div>
+</section>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

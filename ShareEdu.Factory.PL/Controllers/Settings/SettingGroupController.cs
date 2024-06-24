@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using ShareEdu.Factory.BLL.Interfaces;
 using ShareEdu.Factory.BLL.InterFaces;
+using ShareEdu.Factory.DAL.Models.Auth;
 using ShareEdu.Factory.DAL.Models.Settings;
 using ShareEdu.Factory.PL.ViewModels.Settings;
-using System;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ShareEdu.Factory.Controllers
 {
@@ -15,10 +15,12 @@ namespace ShareEdu.Factory.Controllers
     public class SettingGroupsController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly RoleManager<ApplicationRoles> _roleManager;
 
-        public SettingGroupsController(IUnitOfWork unitOfWork)
+        public SettingGroupsController(IUnitOfWork unitOfWork, RoleManager<ApplicationRoles> roleManager)
         {
             _unitOfWork = unitOfWork;
+            _roleManager = roleManager;
         }
 
         // GET: SettingGroups
@@ -31,6 +33,10 @@ namespace ShareEdu.Factory.Controllers
         // GET: SettingGroups/Create
         public async Task<IActionResult> Create()
         {
+            var roles = await _roleManager.Roles.ToListAsync();
+            var rolesSelectList = new SelectList(roles, nameof(IdentityRole.NormalizedName), nameof(IdentityRole.Name));
+            ViewData["Roles"] = rolesSelectList;
+
             return View();
         }
 
@@ -50,7 +56,8 @@ namespace ShareEdu.Factory.Controllers
                     Action = viewModel.Action,
                     Visable = viewModel.Visable,
                     ranking = viewModel.Ranking,
-                    place = viewModel.Place
+                    place = viewModel.Place,
+                    Permission = viewModel.Permission,
                 };
 
                 await _unitOfWork.GetRepository<SettingGroup>().AddAsync(settingGroup);
@@ -59,6 +66,9 @@ namespace ShareEdu.Factory.Controllers
                 TempData["Success"] = "Setting Group added successfully.";
                 return RedirectToAction(nameof(Index));
             }
+                var roles = await _roleManager.Roles.ToListAsync();
+                var rolesSelectList = new SelectList(roles, nameof(IdentityRole.NormalizedName), nameof(IdentityRole.Name));
+                ViewData["Roles"] = rolesSelectList;
 
             return View(viewModel);
         }
@@ -70,7 +80,9 @@ namespace ShareEdu.Factory.Controllers
             {
                 return NotFound();
             }
-
+            var roles = await _roleManager.Roles.ToListAsync();
+            var rolesSelectList = new SelectList(roles, nameof(IdentityRole.NormalizedName), nameof(IdentityRole.Name));
+            ViewData["Roles"] = rolesSelectList;
             var settingGroup = await _unitOfWork.GetRepository<SettingGroup>().GetByIdAsync(id.Value);
             if (settingGroup == null)
             {
@@ -87,7 +99,8 @@ namespace ShareEdu.Factory.Controllers
                 Action = settingGroup.Action,
                 Visable = settingGroup.Visable,
                 Ranking = settingGroup.ranking,
-                Place = settingGroup.place
+                Place = settingGroup.place,
+                Permission = settingGroup.Permission,
             };
 
             return View(viewModel);
@@ -102,6 +115,9 @@ namespace ShareEdu.Factory.Controllers
             {
                 return NotFound();
             }
+            var roles = await _roleManager.Roles.ToListAsync();
+            var rolesSelectList = new SelectList(roles, nameof(IdentityRole.NormalizedName), nameof(IdentityRole.Name));
+            ViewData["Roles"] = rolesSelectList;
 
             if (ModelState.IsValid)
             {
@@ -115,7 +131,8 @@ namespace ShareEdu.Factory.Controllers
                     Action = viewModel.Action,
                     Visable = viewModel.Visable,
                     ranking = viewModel.Ranking,
-                    place = viewModel.Place
+                    place = viewModel.Place,
+                    Permission = viewModel.Permission,
                 };
 
                 try

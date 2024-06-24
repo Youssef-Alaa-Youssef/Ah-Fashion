@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShareEdu.Factory.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b2512fe2b2a68a13c98660d7c98fa657c4cf5ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+985070f2330d912587f09b8fa86438c6b26ae4d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShareEdu.Factory.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShareEdu.Factory.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

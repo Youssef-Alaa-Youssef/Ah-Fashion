@@ -97,9 +97,13 @@
         }
 </style>
 
-<div class="container-fluid mt-5">
-    @{
-        if (User.IsInRole("Admin") || User.IsInRole("Recruitment Officer"))
+<section class="section dashboard container-fluid">
+    <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+            @{
+        if (User.IsInRole("Admin") || User.IsInRole("Recruitment Officer") || User.IsInRole("Super Admin"))
         {
             
             <span class="mr-1">
@@ -148,3 +152,5 @@
         </div>
     }
 </div>
+</div>
+</section>

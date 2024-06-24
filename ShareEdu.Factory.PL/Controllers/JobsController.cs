@@ -27,9 +27,17 @@ namespace ShareEdu.Factory.PL.Controllers
         }
 
         // GET: Job/AllJobs
-        public async Task<IActionResult> AllJobs()
+        public async Task<IActionResult> AllJobs(string query)
         {
-            return View(await _unitOfWork.GetRepository<Jobs>().GetAllAsync());
+            var jobs = await _unitOfWork.GetRepository<Jobs>().GetAllAsync();
+
+            if (!string.IsNullOrEmpty(query))
+            {
+                ViewBag.query = query;
+                jobs = jobs.Where(j => j.Title.Contains(query) || j.Description.Contains(query)).ToList();
+            }
+
+            return View(jobs);
         }
         // GET: Jobs/Details/5
         public async Task<IActionResult> Details(Guid id)
